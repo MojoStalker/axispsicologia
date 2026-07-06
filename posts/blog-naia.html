@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lenda da Vitória-Régia: dependência emocional e psicologia analítica | Marco Aurélio Souza</title>
+  <meta name="description" content="A lenda de Naiá e a música Na Sua Estante, da Pitty, revelam como a dependência emocional e a participation mystique consomem o ego. Uma leitura pela psicologia analítica." />
+  <meta name="keywords" content="psicologia analítica, dependência emocional, lenda da Vitória-Régia, Na Sua Estante Pitty, ansiedade em relacionamentos, participation mystique, projeção junguiana, arquétipo Puella, individuação, inconsciente coletivo" />
+  <meta name="author" content="Marco Aurélio Souza" />
+  <link rel="canonical" href="https://mojostalker.github.io/axispsicologia/posts/blog-naia.html" />
+
+  <meta property="og:title" content="Lenda da Vitória-Régia: dependência emocional e psicologia analítica" />
+  <meta property="og:description" content="A lenda de Naiá e a música Na Sua Estante, da Pitty, revelam como a dependência emocional e a participation mystique consomem o ego." />
+  <meta property="og:image" content="https://mojostalker.github.io/axispsicologia/images/naia-capa.jpg" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://mojostalker.github.io/axispsicologia/posts/blog-naia.html" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --verde:  #1B3A2D;
+      --teal:   #1B3A4B;
+      --ouro:   #C9A84C;
+      --creme:  #F5F2EC;
+      --branco: #FDFBF7;
+      --txt:    #2a2a2a;
+      --txt-lt: #5a5a5a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      background: var(--branco);
+      color: var(--txt);
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 2.5rem;
+      background: rgba(253,251,247,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--verde);
+      text-decoration: none;
+    }
+    .nav-back {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--txt-lt);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--ouro); }
+
+    /* HERO */
+    .post-hero {
+      margin-top: 60px;
+      width: 100%;
+      height: 60vh;
+      min-height: 380px;
+      position: relative;
+      overflow: hidden;
+    }
+    .post-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+    }
+    .post-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(27,58,45,0.2) 0%, rgba(27,58,45,0.8) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 3rem 5vw;
+    }
+    .post-category {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ouro);
+      margin-bottom: 0.8rem;
+    }
+    .post-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.15;
+      color: var(--creme);
+      max-width: 800px;
+      margin-bottom: 1rem;
+    }
+    .post-meta {
+      font-size: 0.75rem;
+      color: rgba(245,242,236,0.65);
+      letter-spacing: 0.05em;
+    }
+
+    /* CONTEÚDO */
+    .post-container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+    .post-intro {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      line-height: 1.75;
+      color: var(--verde);
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(201,168,76,0.25);
+    }
+    .post-container p {
+      font-size: 1rem;
+      line-height: 1.9;
+      color: var(--txt);
+      margin-bottom: 1.5rem;
+    }
+    .post-container h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1.75rem;
+      color: var(--verde);
+      margin: 3.5rem 0 1.2rem;
+      line-height: 1.2;
+    }
+    .post-container h2::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--ouro);
+      margin-bottom: 0.8rem;
+    }
+
+    /* IMAGENS */
+    .post-img {
+      width: 100%;
+      border-radius: 2px;
+      margin: 2.5rem 0 0.8rem;
+      display: block;
+    }
+    .post-img-full {
+      width: calc(100% + 4rem);
+      margin-left: -2rem;
+      border-radius: 0;
+    }
+    figcaption {
+      font-size: 0.75rem;
+      color: var(--txt-lt);
+      letter-spacing: 0.05em;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-style: italic;
+    }
+
+    /* DESTAQUE */
+    .post-destaque {
+      border-left: 2px solid var(--ouro);
+      padding: 1.2rem 1.8rem;
+      margin: 2.5rem 0;
+      background: var(--creme);
+      border-radius: 0 2px 2px 0;
+    }
+    .post-destaque p {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--verde);
+      margin: 0;
+    }
+
+    /* SEPARADOR */
+    .post-sep {
+      text-align: center;
+      margin: 3rem 0;
+      color: var(--ouro);
+      letter-spacing: 0.5em;
+      font-size: 0.8rem;
+    }
+
+    /* REFERÊNCIAS */
+    .post-referencias {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(27,58,45,0.1);
+    }
+    .post-referencias h3 {
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ouro);
+      margin-bottom: 1rem;
+    }
+    .post-referencias p {
+      font-size: 0.82rem;
+      line-height: 1.7;
+      color: var(--txt-lt);
+      margin-bottom: 0.4rem;
+    }
+
+    /* AUTOR */
+    .post-autor {
+      margin-top: 4rem;
+      padding: 2rem;
+      background: var(--creme);
+      border-radius: 2px;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .post-autor img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 5%;
+      flex-shrink: 0;
+      border: 2px solid rgba(201,168,76,0.3);
+    }
+    .post-autor-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--verde);
+      margin-bottom: 0.3rem !important;
+    }
+    .post-autor-info p {
+      font-size: 0.85rem;
+      line-height: 1.65;
+      color: var(--txt-lt);
+      margin-bottom: 0.8rem;
+    }
+    .btn-agendar {
+      display: inline-block;
+      background: var(--ouro);
+      color: var(--branco);
+      padding: 0.65rem 1.5rem;
+      border-radius: 2px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-agendar:hover { background: #d9bc7a; }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      padding: 2rem 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--creme);
+      text-decoration: none;
+    }
+    .footer-copy { font-size: 0.72rem; color: rgba(245,242,236,0.4); }
+
+    /* WA FLOAT */
+    .wa-float {
+      position: fixed;
+      bottom: 1.8rem; right: 1.8rem;
+      z-index: 200;
+      background: #25D366;
+      border-radius: 50%;
+      width: 52px; height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .wa-float:hover { transform: scale(1.08); }
+    .wa-float svg { width: 26px; height: 26px; color: #fff; }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.2rem; }
+      .post-container { padding: 2.5rem 1.2rem 4rem; }
+      .post-img-full { width: 100%; margin-left: 0; }
+      .post-autor { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="https://mojostalker.github.io/axispsicologia/">Marco Aurélio · Psicólogo</a>
+    <a class="nav-back" href="https://mojostalker.github.io/axispsicologia/">← Voltar ao site</a>
+  </nav>
+
+  <div class="post-hero">
+    <img src="https://mojostalker.github.io/axispsicologia/images/naia-capa.jpg" alt="Vitória-Régia ao luar em lago amazônico — lenda de Naiá e dependência emocional na psicologia analítica" />
+    <div class="post-hero-overlay">
+      <p class="post-category">Psicologia Analítica · Mitos e Música</p>
+      <h1 class="post-title">Naiá e o reflexo: quando o que você persegue só existe dentro de você</h1>
+      <p class="post-meta">Marco Aurélio Souza · Axis Psicologia</p>
+    </div>
+  </div>
+
+  <article class="post-container">
+
+    <p class="post-intro">
+      Há muito tempo, na tribo dos tupi-guarani, contavam que Jaci, o deus da lua, beijava os rostos das mais belas virgens da aldeia nas noites escuras. Ele as namorava, e quando se escondia atrás das montanhas escolhia uma para levar consigo. A moça deixava sua forma humana e virava estrela. Naiá ouviu essa história e quis ser essa moça.
+    </p>
+
+    <p>Os anciãos a alertavam: quando uma jovem era levada por Jaci, nunca mais voltava, deixava de ser humana. Naiá não se importou. Não se importou também com os guerreiros que a cortejavam de dia. Quando a noite chegava, ela saía. Fazia cavalgadas pelas montanhas, percorria matas, subia e descia montes atrás da lua. Corria até cair de cansaço. Jaci nunca a escolhia. Ela voltava, e na noite seguinte saía de novo.</p>
+
+    <p>Parou de comer. Parou de beber. Só pensava na lua e em nada mais. O corpo foi adoecendo. Mesmo doente, não havia uma noite que não fugisse em busca de Jaci.</p>
+
+    <p>Numa noite iluminada, parou à beira de um riacho para descansar e beber um pouco de água. Ao se aproximar, viu o reflexo da lua na superfície. Achou que Jaci havia descido do céu para encontrá-la. Sem pensar, atirou-se dentro da água em direção ao seu amado deus. Só dentro da água percebeu que era apenas um reflexo. Tentou sair. Não conseguiu. Se afogou. Nunca mais foi vista por ninguém.</p>
+
+    <p>Ao ver o que havia ocorrido, Jaci ficou comovido e quis recompensar o sacrifício da jovem. Transformou-a em uma estrela das águas: a Vitória-Régia, flor branca que só abre à noite, para ser iluminada pela lua.</p>
+
+    <div class="post-destaque">
+      <p>A flor nasceu. Naiá se foi.</p>
+    </div>
+
+    <h2>O que a lenda não conta</h2>
+
+    <figure>
+      <img class="post-img post-img-full" src="https://mojostalker.github.io/axispsicologia/images/naia-lago.jpg" alt="Naiá à beira do lago contemplando o reflexo da lua — projeção junguiana e dependência emocional" />
+      <figcaption>Naiá e o reflexo — o que é perseguido não pode ser tocado</figcaption>
+    </figure>
+
+    <p>Há um detalhe nessa história que costuma passar despercebido: Jaci só viu Naiá depois que ela morreu.</p>
+
+    <p>Durante todas aquelas noites de corrida, de montanha em montanha, de obsessão crescente, o deus da lua não a escolheu. Não porque ela não fosse digna. Mas porque ela nunca foi vista, de fato, pelo que estava perseguindo. A imagem que consumiu Naiá não era Jaci. Era o que ela havia projetado em Jaci.</p>
+
+    <p>A psicologia analítica chama isso de projeção: o processo pelo qual conteúdos internos — desejos, medos, imagens arquetípicas — são depositados sobre algo ou alguém de fora, e então perseguidos como se existissem lá. O objeto da projeção pode ser uma pessoa, um ideal, um deus. O que define a projeção não é o objeto, mas o fato de que o sujeito não consegue mais enxergar onde termina o que é seu e onde começa o que é do outro.</p>
+
+    <p>Naiá não amava Jaci. Ela amava a imagem de Jaci que carregava dentro de si. E essa imagem era inalcançável por definição: nenhum deus real, nenhuma lua real, poderia satisfazer o que era, na verdade, uma demanda interna.</p>
+
+    <h2>A Puella e a vida que não começa</h2>
+
+    <figure>
+      <img class="post-img" src="https://mojostalker.github.io/axispsicologia/images/naia-floresta.jpg" alt="Naiá percorrendo a floresta à noite em busca da lua — arquétipo da Puella na psicologia junguiana" />
+      <figcaption>A busca noturna — a vida suspensa em torno de um ideal inalcançável</figcaption>
+    </figure>
+
+    <p>O que faz uma mulher rejeitar todos os guerreiros que a cortejam e correr atrás de um deus que nunca vai descer do céu? A resposta não está na teimosia, nem na ingenuidade. Está num padrão que a psicologia analítica reconhece e nomeia.</p>
+
+    <p>Jung descreveu o arquétipo da Puella como a eterna menina que recusa os compromissos da vida real para permanecer presa a um amante ideal e inalcançável. Naiá não rejeitou os guerreiros por acaso, nem por capricho. Ela havia sido capturada por uma imagem arquetípica que tornou a realidade insuportável por comparação.</p>
+
+    <p>Esse é o mecanismo central da Puella: não é que a vida real seja ruim. É que ela é concreta, imperfeita, limitada. E o ideal interno não tem nenhuma dessas restrições. Qualquer guerreiro real vai errar, vai decepcionar, vai ter um mau dia. Jaci, o deus da lua, nunca vai fazer isso. Porque Jaci, enquanto imagem interna, é perfeito exatamente por ser inalcançável.</p>
+
+    <p>O resultado é uma vida que fica suspensa. Provisória. Esperando o momento certo, a pessoa certa, a condição certa, que nunca chega. Os sinais são reconhecíveis: você vive esperando algo ou alguém que nunca chega e recusa o que está disponível. A realidade concreta parece pálida demais perto do que você imagina. Você percebe que está adoecendo, mas não consegue parar de buscar. A vida real foi adiada para um dia que não existe.</p>
+
+    <p>Naiá adoeceu. Continuou saindo toda noite. Parou de comer. O corpo foi dando sinais que a mente não quis ouvir.</p>
+
+    <h2>O reflexo e a água</h2>
+
+    <p>O momento decisivo da lenda não é a morte de Naiá. É o instante antes.</p>
+
+    <p>Ela para à beira do riacho. Está exausta, doente, à beira do limite. E vê o reflexo da lua na água. E acredita que é a lua de verdade.</p>
+
+    <p>Na linguagem simbólica, a água é o espelho do inconsciente: a superfície que reflete, que distorce, que convida a mergulhar. O reflexo não é o objeto. É uma imagem especular, sem substância própria, que existe apenas porque há luz vinda de outro lugar. Naiá se atira atrás de algo que não tem corpo, não tem profundidade, não pode ser tocado. E se afoga.</p>
+
+    <p>Jung chamaria isso de consumação pelo inconsciente: quando uma imagem arquetípica captura o ego completamente, a pessoa deixa de viver a vida real para perseguir algo que existe apenas dentro dela. Não é individuação. É o movimento oposto.</p>
+
+    <div class="post-destaque">
+      <p>Na mitologia do herói, a descida às águas tem um nome: <em>Nekyia</em>. É a descida ao mundo subterrâneo, ao inconsciente profundo, de onde o herói retorna transformado. Naiá mergulha. Mas não volta.</p>
+    </div>
+
+    <p>E a transformação em Vitória-Régia, que poderia parecer redenção, revela-se o último ato da possessão. A flor é uma mandala, símbolo de totalidade e centro ordenador da psique. Mas para Naiá ela funciona como prisão: bela por fora, fixada por dentro. Ela não encontrou o centro. Ela foi capturada por ele. A obsessão não se encerrou com a morte: apenas mudou de forma. Toda noite, a flor ainda se abre ao ver a lua. O complexo continua operando, agora em ritmo eterno, sobre uma psique que não existe mais para resistir.</p>
+
+    <p>Jaci a transformou em reflexo vegetal de sua própria luz. E a deixou no lago como quem coloca um troféu na estante.</p>
+
+    <div class="post-sep">· · ·</div>
+
+    <h2>Só por hoje</h2>
+
+    <figure>
+      <img class="post-img" src="https://mojostalker.github.io/axispsicologia/images/naia-robo.jpg" alt="O robô do videoclipe de Na Sua Estante da Pitty — participation mystique e dependência emocional" />
+      <figcaption>O robô de "Na Sua Estante" — como a Vitória-Régia, ainda pulsa quando ela passa</figcaption>
+    </figure>
+
+    <p>Pitty não escreveu sobre Naiá. Mas o videoclipe de "Na Sua Estante" poderia ser a lenda contada de novo.</p>
+
+    <p>O protagonista é um robô inspirado no Homem de Lata de O Mágico de Oz. Mas ao contrário do personagem original, que passa a história toda em busca de um coração, o robô do clipe já tem um: um relógio que carrega pendurado no peito, que pulsa apaixonado por uma colega de trabalho que nem percebe que ele existe. Ele lança declarações. Ela não vê. Até que ele não suporta mais, arranca o próprio coração e morre. O corpo é recolhido, transformado em peça de bicicleta. Nos últimos segundos, a mulher aparece pedalando a bicicleta, e o coração do robô está em uma vitrine, ainda pulsando apaixonado enquanto ela passa.</p>
+
+    <p>Como a Vitória-Régia que ainda se abre ao ver a lua, o coração ainda pulsa quando ela passa. Capturado, não transformado. Naiá no lago. O robô na vitrine. A mesma lenda, séculos de distância, linguagens diferentes.</p>
+
+    <p>O que diferencia o eu lírico da música de Naiá não é a ausência do vício. É a consciência dele.</p>
+
+    <p>Em "Na Sua Estante", o eu lírico descreve uma situação que qualquer um reconhece: alguém que vai e vem, que o ignora quando está perto e o procura quando some, que o deixa esperando sem nunca realmente chegar. E em algum momento ele percebe o que está acontecendo consigo mesmo.</p>
+
+    <div class="post-destaque">
+      <p>"Só por hoje, não vou tomar minha dose de você. Essa abstinência uma hora vai passar." <em>(Pitty, Na Sua Estante, 2005)</em></p>
+    </div>
+
+    <p>A palavra <em>dose</em> não é acidental. Ela nomeia o mecanismo com precisão: a busca pelo outro se tornou uma dependência. O que a psicologia analítica chama de <em>participation mystique</em> — uma identidade inconsciente em que o sujeito não se distingue mais do objeto, criando uma ligação compulsória que se alimenta de si mesma. A presença traz alívio momentâneo. A ausência traz abstinência. O ciclo se retroalimenta. E sair dele dói, porque a dor da abstinência é real, mesmo que o que a causou fosse ilusão.</p>
+
+    <p>"Eu estava aqui o tempo todo. Só você não viu." <em>(Pitty, Na Sua Estante, 2005)</em></p>
+
+    <p>Esse verso descreve o momento em que o véu cai. Jung explicava que na projeção, o outro nunca foi realmente visto: o que foi amado era uma imagem interna depositada sobre ele. Quando a projeção começa a ser retirada, a pessoa percebe que esteve presente o tempo todo, real e concreta, enquanto o outro enxergava apenas o que precisava enxergar.</p>
+
+    <p>"Eu não ficaria bem na sua estante." <em>(Pitty, Na Sua Estante, 2005)</em></p>
+
+    <p>Essa é a recusa central da canção. A estante é a imagem da persona imposta pelo outro: uma máscara, um papel fixo, uma forma de petrificar o ego em uma posição que serve a quem olha, não a quem está lá. Naiá acabou na estante de Jaci sem poder recusar. O eu lírico recusa antes.</p>
+
+    <p>Mas a canção não oferece uma saída limpa. "Dessa vez eu já vesti minha armadura." <em>(Pitty, Na Sua Estante, 2005)</em> A armadura protege, mas também isola. O ego que se fecha demais para não ser invadido bloqueia não só o outro, mas também a influência vitalizadora do próprio Self. O eu lírico saiu da fusão, mas a armadura pode ser o próximo obstáculo. A individuação não termina quando a projeção é reconhecida. Ela começa aí.</p>
+
+    <h2>O que Naiá não pôde e a Pitty pode</h2>
+
+    <p>A lenda não oferece saída. Às vezes a vida sim.</p>
+
+    <p>A diferença entre Naiá e o eu lírico não está na intensidade do que sentem. Os dois estão consumidos. A diferença está num verso: <em>"tô aproveitando cada segundo antes que isso aqui vire uma tragédia."</em></p>
+
+    <p>Naiá não viu a tragédia se aproximando. Ou viu e não conseguiu parar. O eu lírico vê, nomeia, e se move antes de mergulhar. Esse movimento não é indolor: a abstinência é real, a armadura pesa, as feridas não se fecham rápido. Mas é o movimento que Naiá não fez.</p>
+
+    <p>Na psicologia analítica, essa é a diferença entre viver o arquétipo de forma cega e conscientizá-lo. Naiá viveu o mito sem saber que estava dentro dele. A música descreve o momento em que o indivíduo olha para a própria história e reconhece o padrão antes de ser engolido por ele. Não é o fim do sofrimento. É o começo da individuação.</p>
+
+    <div class="post-destaque">
+      <p>Naiá mergulhou convicta no reflexo. O eu lírico parou à beira da água e reconheceu que era só um reflexo. A pergunta que a lenda e a música deixam é a mesma: você consegue reconhecer o reflexo antes de pular?</p>
+    </div>
+
+    <!-- AUTOR -->
+    <div class="post-autor">
+      <img src="https://mojostalker.github.io/axispsicologia/images/eu.jpg" alt="Marco Aurélio Souza, psicólogo junguiano em Pindamonhangaba" />
+      <div class="post-autor-info">
+        <p class="post-autor-name">Marco Aurélio Souza</p>
+        <p>Psicólogo clínico de orientação junguiana. Atende presencialmente em Pindamonhangaba (SP) e online para todo o Brasil e brasileiros no exterior.</p>
+        <a href="https://mojostalker.github.io/axispsicologia/#contato" class="btn-agendar">Agendar consulta</a>
+      </div>
+    </div>
+
+    <!-- REFERÊNCIAS -->
+    <div class="post-referencias">
+      <h3>Referências</h3>
+      <p>JUNG, C. G. <em>O eu e o inconsciente.</em> Petrópolis: Vozes.</p>
+      <p>JUNG, C. G. <em>Os arquétipos e o inconsciente coletivo.</em> Petrópolis: Vozes.</p>
+      <p>VON FRANZ, M.-L. <em>A interpretação dos contos de fada.</em> São Paulo: Paulus.</p>
+      <p>VON FRANZ, M.-L. <em>Problemas do feminino nos contos de fada.</em> São Paulo: Paulus.</p>
+      <p>Lenda da Vitória-Régia, tradição tupi-guarani.</p>
+      <p>PITTY. Na Sua Estante. Álbum: <em>Anacrônico,</em> 2005.</p>
+    </div>
+
+  </article>
+
+  <footer>
+    <a class="footer-logo" href="https://mojostalker.github.io/axispsicologia/">Marco Aurélio · Psicólogo</a>
+    <p class="footer-copy">© 2026 · Psicologia Analítica · Pindamonhangaba, SP</p>
+  </footer>
+
+  <a href="https://wa.me/5512981367385" target="_blank" class="wa-float" aria-label="WhatsApp">
+    <svg fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
