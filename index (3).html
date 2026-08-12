@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marco Aurélio | Psicólogo Clínico Online · Psicoterapia Junguiana</title>
+  <meta name="description" content="Agende sua consulta com o psicólogo Marco Aurélio. Atendimento online com abordagem Junguiana para adultos e adolescentes no Brasil e no exterior." />
+  <meta name="keywords" content="psicólogo clínico online, psicoterapia junguiana, psicólogo Pindamonhangaba, atendimento psicológico brasileiros exterior, terapia online adultos, psicologia analítica Jung" />
+  <meta name="author" content="Marco Aurélio Souza" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mojostalker.github.io/axispsicologia/" />
+
+  <!-- Open Graph (WhatsApp, Facebook) -->
+  <meta property="og:title" content="Marco Aurélio | Psicólogo Clínico Online · Psicoterapia Junguiana" />
+  <meta property="og:description" content="Atendimento psicológico com abordagem Junguiana para adultos e adolescentes. Presencial em Pindamonhangaba (SP) e online para brasileiros em qualquer país." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mojostalker.github.io/axispsicologia/" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Marco Aurélio | Psicólogo Clínico Online" />
+  <meta name="twitter:description" content="Psicoterapia Junguiana — presencial em Pindamonhangaba e online para brasileiros no exterior." />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2LBNKLDVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y2LBNKLDVH');
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="64x64" href="favicon-64.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ── TOKENS ── */
+    :root {
+      --verde:   #1B3A2D;
+      --teal:    #1B3A4B;
+      --ouro:    #C9A84C;
+      --ouro-lt: #d9bc7a;
+      --creme:   #F5F2EC;
+      --branco:  #FDFBF7;
+      --txt:     #2a2a2a;
+      --txt-lt:  #5a5a5a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      background: var(--branco);
+      color: var(--txt);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 2.5rem;
+      background: rgba(253,251,247,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1.25rem;
+      color: var(--verde);
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--txt-lt);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--ouro); }
+
+    .nav-cta {
+      background: var(--ouro);
+      color: var(--branco) !important;
+      padding: 0.55rem 1.2rem;
+      border-radius: 2px;
+      font-weight: 500 !important;
+      letter-spacing: 0.08em !important;
+      text-transform: uppercase !important;
+      font-size: 0.75rem !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--ouro-lt) !important; color: var(--branco) !important; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100svh;
+      background: var(--verde);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg-ornament {
+      position: absolute;
+      right: -10vw;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 55vw;
+      height: 55vw;
+      border-radius: 50%;
+      border: 1px solid rgba(201,168,76,0.12);
+      pointer-events: none;
+    }
+    .hero-bg-ornament::before {
+      content: '';
+      position: absolute;
+      inset: 15%;
+      border-radius: 50%;
+      border: 1px solid rgba(201,168,76,0.09);
+    }
+
+    .hero-text {
+      padding: 8rem 3rem 6rem 5vw;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ouro);
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(2.8rem, 5vw, 4.4rem);
+      line-height: 1.1;
+      color: var(--creme);
+      margin-bottom: 1.6rem;
+    }
+
+    .hero-title em {
+      font-style: normal;
+      color: var(--ouro);
+    }
+
+    .hero-sub {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: rgba(245,242,236,0.72);
+      max-width: 420px;
+      margin-bottom: 2.6rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--ouro);
+      color: var(--branco);
+      padding: 0.85rem 2rem;
+      border-radius: 2px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: var(--ouro-lt); }
+
+    .btn-ghost {
+      display: inline-block;
+      border: 1px solid rgba(201,168,76,0.5);
+      color: var(--ouro);
+      padding: 0.85rem 2rem;
+      border-radius: 2px;
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--ouro); color: var(--ouro-lt); }
+
+    .hero-card {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 5vw 6rem 2rem;
+    }
+
+    .crp-badge {
+      position: absolute;
+      top: 35%;
+      right: 8vw;
+      background: rgba(27,58,45,0.7);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 4px;
+      padding: 1rem 1.4rem;
+      backdrop-filter: blur(4px);
+    }
+    .crp-badge .label {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ouro);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+    .crp-badge .value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      color: var(--creme);
+      font-style: italic;
+    }
+
+    /* ── SECTION SHARED ── */
+    .section {
+      padding: 6rem 5vw;
+    }
+
+    .section-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ouro);
+      margin-bottom: 0.8rem;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      line-height: 1.15;
+      color: var(--verde);
+      margin-bottom: 1.5rem;
+    }
+
+    .divider {
+      width: 48px;
+      height: 1px;
+      background: var(--ouro);
+      margin-bottom: 2rem;
+    }
+
+    /* ── SOBRE ── */
+    #sobre {
+      background: var(--creme);
+    }
+
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 5rem;
+      align-items: start;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .sobre-aside {
+      position: sticky;
+      top: 6rem;
+    }
+
+    .sobre-foto-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: linear-gradient(160deg, var(--verde) 0%, var(--teal) 100%);
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+
+    .sobre-foto-placeholder::after {
+      content: '';
+    }
+
+    .sobre-foto-caption {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--txt-lt);
+      text-align: center;
+    }
+
+    .sobre-content p {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--txt);
+      margin-bottom: 1.4rem;
+    }
+
+    .formacao-list {
+      list-style: none;
+      margin-top: 2rem;
+    }
+
+    .formacao-list li {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 0.9rem 0;
+      border-top: 1px solid rgba(27,58,45,0.08);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .formacao-list li:last-child { border-bottom: 1px solid rgba(27,58,45,0.08); }
+
+    .formacao-icon {
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      color: var(--ouro);
+    }
+
+    /* ── SERVIÇOS ── */
+    #servicos {
+      background: var(--branco);
+    }
+
+    .servicos-header {
+      max-width: 1100px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .servicos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5px;
+      background: rgba(27,58,45,0.08);
+      border: 1px solid rgba(27,58,45,0.08);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .servico-card {
+      background: var(--branco);
+      padding: 2.5rem;
+      transition: background 0.25s;
+    }
+
+    .servico-card:hover { background: var(--creme); }
+
+    .servico-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 2.5rem;
+      color: rgba(201,168,76,0.25);
+      line-height: 1;
+      margin-bottom: 1.2rem;
+    }
+
+    .servico-titulo {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.35rem;
+      color: var(--verde);
+      margin-bottom: 0.8rem;
+    }
+
+    .servico-desc {
+      font-size: 0.88rem;
+      line-height: 1.75;
+      color: var(--txt-lt);
+    }
+
+    .servico-tag {
+      display: inline-block;
+      margin-top: 1.2rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ouro);
+      border: 1px solid rgba(201,168,76,0.35);
+      padding: 0.25rem 0.6rem;
+      border-radius: 2px;
+    }
+
+    /* ── FAQ ── */
+    #faq {
+      background: var(--verde);
+      color: var(--creme);
+    }
+
+    #faq .section-title { color: var(--creme); }
+
+    .faq-grid {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-top: 1px solid rgba(245,242,236,0.12);
+      padding: 1.6rem 0;
+      cursor: pointer;
+    }
+
+    .faq-item:last-child { border-bottom: 1px solid rgba(245,242,236,0.12); }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--creme);
+      line-height: 1.4;
+    }
+
+    .faq-icon {
+      min-width: 20px;
+      width: 20px;
+      height: 20px;
+      color: var(--ouro);
+      transition: transform 0.25s;
+    }
+
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.25s;
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: rgba(245,242,236,0.75);
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding-top: 1rem;
+    }
+
+    /* ── CONTATO ── */
+    #contato {
+      background: var(--creme);
+    }
+
+    .contato-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    .contato-info p {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--txt-lt);
+      margin-bottom: 2rem;
+    }
+
+    .contato-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contato-link {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      text-decoration: none;
+      color: var(--txt);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .contato-link:hover { color: var(--ouro); }
+
+    .contato-link-icon {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      background: var(--verde);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contato-link-icon svg {
+      width: 18px;
+      height: 18px;
+      color: var(--ouro);
+    }
+
+    .agenda-embed {
+      background: var(--branco);
+      border: 1px solid rgba(27,58,45,0.12);
+      border-radius: 4px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .agenda-embed-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.3rem;
+      color: var(--verde);
+      margin-bottom: 0.6rem;
+    }
+
+    .agenda-embed-sub {
+      font-size: 0.82rem;
+      color: var(--txt-lt);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .agenda-whatsapp-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.2rem;
+      padding: 3rem 1.5rem;
+      background: var(--branco);
+      border: 1px solid rgba(27,58,45,0.1);
+      border-radius: 4px;
+    }
+    .wa-cta-icon {
+      width: 48px;
+      height: 48px;
+      color: #25D366;
+    }
+    .wa-cta-text {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--txt-lt);
+      max-width: 320px;
+    }
+
+    .agenda-iframe-wrap {
+      position: relative;
+      width: 100%;
+      height: 580px;
+      border-radius: 2px;
+      overflow: hidden;
+      background: #f0ede6;
+    }
+
+    .agenda-iframe-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #111;
+      padding: 2.5rem 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1.1rem;
+      color: var(--creme);
+      text-decoration: none;
+    }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: rgba(245,242,236,0.4);
+    }
+
+    .footer-insta a {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: var(--ouro);
+      text-decoration: none;
+    }
+
+    /* ── WHATSAPP FLOAT ── */
+    .wa-float {
+      position: fixed;
+      bottom: 1.8rem;
+      right: 1.8rem;
+      z-index: 200;
+      background: #25D366;
+      border-radius: 50%;
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      transition: transform 0.2s;
+      text-decoration: none;
+    }
+    .wa-float:hover { transform: scale(1.08); }
+    .wa-float svg { width: 28px; height: 28px; color: #fff; }
+
+    /* ── HERO QUOTE ── */
+    .hero-quote {
+      text-align: center;
+      max-width: 360px;
+      margin-bottom: 1.5rem;
+    }
+    .hero-quote p {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: rgba(245,242,236,0.85);
+      margin-bottom: 0.5rem;
+    }
+    .hero-quote cite {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ouro);
+      font-style: normal;
+    }
+
+    /* ── CITAÇÃO HERO ── */
+    .hero-citacao {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(201,168,76,0.2);
+      text-align: center;
+      max-width: 340px;
+    }
+    .hero-citacao blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: rgba(245,242,236,0.75);
+      margin: 0 0 0.6rem;
+    }
+    .hero-citacao cite {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ouro);
+      font-style: normal;
+    }
+
+    /* ── HERO LOGO ── */
+    .hero-logo-wrap {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .hero-logo-img {
+      width: clamp(220px, 28vw, 380px);
+      height: auto;
+      filter: drop-shadow(0 8px 32px rgba(201,168,76,0.25));
+      animation: floatLogo 5s ease-in-out infinite;
+    }
+
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0px); }
+      50%       { transform: translateY(-10px); }
+    }
+
+    /* reposicionar badge abaixo do logo */
+    .hero-logo-wrap .crp-badge {
+      position: static;
+      background: rgba(27,58,45,0.75);
+    }
+
+    /* ── RESPONSIVE ── */
+    /* ── HAMBURGER ── */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--verde);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .nav-mobile-menu {
+      display: none;
+      position: fixed;
+      top: 60px; left: 0; right: 0;
+      background: rgba(253,251,247,0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 1.5rem 2rem;
+      flex-direction: column;
+      gap: 1.2rem;
+      z-index: 99;
+    }
+    .nav-mobile-menu.open { display: flex; }
+    .nav-mobile-menu a {
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--txt-lt);
+      text-decoration: none;
+      padding: 0.4rem 0;
+      border-bottom: 1px solid rgba(27,58,45,0.07);
+    }
+    .nav-mobile-menu a.nav-cta {
+      background: var(--ouro);
+      color: var(--branco) !important;
+      padding: 0.75rem 1.2rem;
+      border-radius: 2px;
+      border: none;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.2rem; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+
+      #hero { grid-template-columns: 1fr; min-height: 100svh; }
+      .hero-text { padding: 7rem 1.5rem 3rem; }
+      .hero-card { display: flex; justify-content: center; padding: 0 1.5rem 3rem; }
+      .hero-logo-img { width: 200px; }
+
+      .sobre-grid,
+      .contato-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .sobre-aside { position: static; }
+      .sobre-foto-placeholder { max-width: 260px; margin: 0 auto 1.5rem; }
+
+      .section { padding: 4rem 1.5rem; }
+
+      footer { flex-direction: column; text-align: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <!-- Menu mobile -->
+    <div class="nav-mobile-menu" id="mobileMenu">
+      <a href="#sobre" onclick="closeMobile()">Sobre</a>
+      <a href="#servicos" onclick="closeMobile()">Serviços</a>
+      <a href="#faq" onclick="closeMobile()">FAQ</a>
+      <a href="blog.html" onclick="closeMobile()">Blog</a>
+      <a href="#contato" class="nav-cta" onclick="closeMobile()">Agendar consulta</a>
+    </div>
+
+    <a class="nav-logo" href="#hero"><img src="logo.png" alt="Marco Aurélio Psicólogo" style="height:44px;width:auto;vertical-align:middle;" /></a>
+    <button class="nav-hamburger" id="hamburger" onclick="toggleMobile()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#contato" class="nav-cta">Agendar consulta</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-ornament"></div>
+
+    <div class="hero-text">
+      <p class="hero-eyebrow">Psicologia Analítica · Jung</p>
+      <h1 class="hero-title">
+        O autoconhecimento<br>começa onde <em>a máscara</em><br>termina.
+      </h1>
+      <p class="hero-sub">
+        Atendimento psicológico com base na Psicologia Analítica de Carl Gustav Jung — presencial em Pindamonhangaba (SP) e online para brasileiros em qualquer parte do mundo.
+      </p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn-primary">Agendar consulta</a>
+        <a href="#sobre" class="btn-ghost">Conheça a abordagem</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-logo-wrap">
+        <blockquote class="hero-quote">
+          <p>"Onde o amor impera, não há desejo de poder; e onde o poder predomina, há falta de amor. Um é a sombra do outro."</p>
+          <cite>— Carl Gustav Jung</cite>
+        </blockquote>
+        <img src="logo.png" alt="Marco Aurélio Psicólogo" class="hero-logo-img" />
+        <div class="crp-badge">
+          <span class="label">CRP</span>
+          <span class="value" style="font-family:'Cormorant Garamond',serif;font-style:normal;font-weight:400;letter-spacing:0.08em;font-variant-numeric:lining-nums;">06/237122</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section">
+    <div class="sobre-grid">
+      <div class="sobre-aside">
+        <div class="sobre-foto-placeholder"><img src="foto.jpg" alt="Marco Aurélio Psicólogo" style="width:100%;height:100%;object-fit:cover;object-position:50% 5%;border-radius:2px;" /></div>
+        <p class="sobre-foto-caption">Marco Aurélio · Psicólogo</p>
+      </div>
+
+      <div class="sobre-content">
+        <p class="section-label">Sobre mim</p>
+        <h2 class="section-title">Uma escuta que<br>vai além do óbvio.</h2>
+        <div class="divider"></div>
+
+        <p>
+          Sou psicólogo formado pela Faculdade Anhanguera de Pindamonhangaba, com formação em Psicologia Analítica — a abordagem desenvolvida por Carl Gustav Jung que compreende a psique como um sistema vivo, em constante busca por equilíbrio e sentido.
+        </p>
+        <p>
+          Meu trabalho parte da convicção de que cada pessoa carrega em si mesma os recursos para o seu processo de individuação. Na clínica, utilizo sonhos, imagens, símbolos e a relação terapêutica como ferramentas para iluminar o que permanece inconsciente — e que muitas vezes governa nossas escolhas sem que percebamos.
+        </p>
+        <p>
+          Atendo presencialmente em Pindamonhangaba e também online — inclusive para brasileiros que moram fora do Brasil e querem ser atendidos em português, por um psicólogo registrado no CRP-SP (CRP 06/237122).
+        </p>
+
+        <ul class="formacao-list">
+          <li>
+            <svg class="formacao-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+            </svg>
+            <div>
+              <strong>Graduação em Psicologia</strong><br>
+              Faculdade Anhanguera de Pindamonhangaba
+            </div>
+          </li>
+          <li>
+            <svg class="formacao-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            </svg>
+            <div>
+              <strong>Psicologia Analítica (Jung)</strong><br>
+              Abordagem teórica e clínica principal
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="section">
+    <div class="servicos-header">
+      <p class="section-label">Modalidades de atendimento</p>
+      <h2 class="section-title">O que ofereço</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="servicos-grid">
+      <div class="servico-card">
+        <div class="servico-num">01</div>
+        <h3 class="servico-titulo">Psicoterapia Individual</h3>
+        <p class="servico-desc">
+          Processo terapêutico contínuo com base junguiana. Trabalhamos com sonhos, complexos, arquétipos e o material inconsciente que emerge na relação terapêutica — em direção à individuação e ao maior contato com o Self.
+        </p>
+        <span class="servico-tag">Presencial · Online</span>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-num">02</div>
+        <h3 class="servico-titulo">Atendimento para Brasileiros no Exterior</h3>
+        <p class="servico-desc">
+          Você mora fora do Brasil e quer ser atendido em português? Ofereço sessões online para brasileiros em qualquer país — com a mesma qualidade, na língua e na cultura que você conhece.
+        </p>
+        <span class="servico-tag">Online · Internacional</span>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-num">03</div>
+        <h3 class="servico-titulo">Orientação Psicológica</h3>
+        <p class="servico-desc">
+          Processo de menor duração voltado para momentos específicos de crise, transição ou tomada de decisão. Ideal para quem busca um espaço de escuta qualificada sem necessariamente entrar em um processo terapêutico longo.
+        </p>
+        <span class="servico-tag">Presencial · Online</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="faq-grid">
+      <p class="section-label" style="color: var(--ouro)">Perguntas frequentes</p>
+      <h2 class="section-title">Dúvidas comuns</h2>
+      <div class="divider"></div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          Como funciona a Psicologia Analítica na prática?
+          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </div>
+        <div class="faq-answer">
+          A abordagem junguiana parte da ideia de que grande parte do que nos afeta vive no inconsciente — sonhos, emoções inesperadas, padrões que se repetem. Nas sessões, exploramos esse material com curiosidade e sem julgamento. Não é uma terapia de "conselhos", mas de autoconhecimento profundo.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          Quantas sessões são necessárias?
+          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </div>
+        <div class="faq-answer">
+          Cada processo é único. Geralmente começamos com uma sessão de acolhimento para entender sua demanda e, a partir daí, definimos juntos o ritmo mais adequado — semanal ou quinzenal. Não existe um número fixo de sessões pré-determinado.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          O atendimento online funciona do mesmo jeito?
+          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </div>
+        <div class="faq-answer">
+          Sim. O atendimento online tem eficácia comprovada e segue os mesmos princípios do presencial. Utilizamos plataformas seguras e criptografadas. Para brasileiros no exterior, é a modalidade padrão — e funciona muito bem, especialmente para quem sente falta de ser atendido em português.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          Você atende pelo plano de saúde?
+          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </div>
+        <div class="faq-answer">
+          No momento, trabalho apenas com pagamento particular. Aceito PIX e transferência. Os valores são discutidos diretamente no primeiro contato — trabalho com uma política de escuta para viabilizar o processo sempre que possível.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          Como faço para marcar uma sessão?
+          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </div>
+        <div class="faq-answer">
+          É simples: você me chama pelo WhatsApp e combinamos juntos o melhor dia e horário. Respondo a todas as mensagens pessoalmente, geralmente no mesmo dia.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section">
+    <div class="contato-grid">
+      <div class="contato-info">
+        <p class="section-label">Contato & Agendamento</p>
+        <h2 class="section-title">Vamos conversar?</h2>
+        <div class="divider"></div>
+        <p>
+          O primeiro passo é o mais importante. Entre em contato para agendar uma sessão de acolhimento — sem compromisso — onde podemos nos conhecer e ver se faz sentido trabalharmos juntos.
+        </p>
+
+        <div class="contato-links">
+          <a href="https://wa.me/5512981367385?text=Ol%C3%A1%2C%20Marco.%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" class="contato-link">
+            <span class="contato-link-icon">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </span>
+            WhatsApp — fale diretamente comigo
+          </a>
+
+          <a href="https://instagram.com/marcoaurelio.psico" target="_blank" class="contato-link">
+            <span class="contato-link-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </span>
+            @marcoaurelio.psico · Instagram
+          </a>
+
+          <a href="mailto:souza.axis.psicologia@gmail.com" class="contato-link">
+            <span class="contato-link-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
+            </span>
+            souza.axis.psicologia@gmail.com
+          </a>
+
+          <div class="contato-link" style="cursor: default; color: var(--txt-lt)">
+            <span class="contato-link-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+            </span>
+            Pindamonhangaba, SP · Brasil
+          </div>
+        </div>
+      </div>
+
+      <!-- AGENDA EMBED -->
+      <div class="agenda-embed">
+        <h3 class="agenda-embed-title">Agende sua consulta</h3>
+        <p class="agenda-embed-sub">Vamos combinar juntos o melhor dia e horário, e alinhar os detalhes da primeira sessão.</p>
+        <div class="agenda-whatsapp-cta">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="wa-cta-icon">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <p class="wa-cta-text">No momento, os agendamentos são feitos diretamente pelo WhatsApp, para que possamos conversar sobre o melhor horário e os próximos passos.</p>
+          <a href="https://wa.me/5512981367385?text=Ol%C3%A1%2C%20Marco.%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" class="btn-primary" style="display:inline-block;">Agendar pelo WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a class="footer-logo" href="#hero" style="display:flex;align-items:center;gap:0.85rem;text-decoration:none;">
+      <img src="logo.png" alt="Logo" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:1px solid rgba(201,168,76,0.4);" />
+      <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:1.1rem;color:var(--creme);">Marco Aurélio · Psicólogo</span>
+    </a>
+    <p class="footer-copy">© 2026 · Marco Aurélio Souza · Psicólogo · CRP 06/237122 · Pindamonhangaba, SP</p>
+    <div class="footer-insta"><a href="https://instagram.com/marcoaurelio.psico" target="_blank">@marcoaurelio.psico</a></div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/5512981367385?text=Ol%C3%A1%2C%20Marco.%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" class="wa-float" aria-label="Contato via WhatsApp">
+    <svg fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script>
+    function toggleMobile() {
+      const btn = document.getElementById('hamburger');
+      const menu = document.getElementById('mobileMenu');
+      btn.classList.toggle('open');
+      menu.classList.toggle('open');
+    }
+    function closeMobile() {
+      document.getElementById('hamburger').classList.remove('open');
+      document.getElementById('mobileMenu').classList.remove('open');
+    }
+
+    function toggleFaq(el) {
+      const isOpen = el.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!isOpen) el.classList.add('open');
+    }
+
+    // Nav hide on scroll down, show on scroll up
+    let lastY = 0;
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      if (y > lastY && y > 100) {
+        nav.style.transform = 'translateY(-100%)';
+        nav.style.transition = 'transform 0.3s';
+      } else {
+        nav.style.transform = '';
+      }
+      lastY = y;
+    }, { passive: true });
+  </script>
+</body>
+</html>
