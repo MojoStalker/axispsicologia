@@ -291,6 +291,49 @@
       margin-bottom: 2rem;
     }
 
+    /* ── ABORDAGEM ── */
+    #abordagem {
+      background: var(--verde);
+      color: var(--creme);
+    }
+    #abordagem .section-title { color: var(--creme); }
+    .abordagem-header {
+      max-width: 1100px;
+      margin: 0 auto 3.5rem;
+    }
+    .abordagem-header p:not(.section-label) {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: rgba(245,242,236,0.75);
+      max-width: 640px;
+    }
+    .abordagem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1px;
+      background: rgba(245,242,236,0.12);
+      border: 1px solid rgba(245,242,236,0.12);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .abordagem-item {
+      background: var(--verde);
+      padding: 2.5rem;
+    }
+    .abordagem-item h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.35rem;
+      color: var(--creme);
+      margin-bottom: 0.8rem;
+    }
+    .abordagem-item p {
+      font-size: 0.88rem;
+      line-height: 1.75;
+      color: rgba(245,242,236,0.72);
+    }
+
     /* ── SOBRE ── */
     #sobre {
       background: var(--creme);
@@ -480,7 +523,7 @@
     }
 
     .faq-item.open .faq-answer {
-      max-height: 300px;
+      max-height: 600px;
       padding-top: 1rem;
     }
 
@@ -864,7 +907,8 @@
   <nav>
     <!-- Menu mobile -->
     <div class="nav-mobile-menu" id="mobileMenu">
-      <a href="#sobre" onclick="closeMobile()">Sobre</a>
+      <a href="#sobre" onclick="closeMobile()">Sobre mim</a>
+      <a href="#abordagem" onclick="closeMobile()">Abordagem</a>
       <a href="#servicos" onclick="closeMobile()">Serviços</a>
       <a href="#faq" onclick="closeMobile()">FAQ</a>
       <a href="blog.html" onclick="closeMobile()">Blog</a>
@@ -877,7 +921,8 @@
     </button>
 
     <ul class="nav-links">
-      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#sobre">Sobre mim</a></li>
+      <li><a href="#abordagem">Abordagem</a></li>
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="blog.html">Blog</a></li>
@@ -899,7 +944,7 @@
       </p>
       <div class="hero-actions">
         <a href="#contato" class="btn-primary">Agendar consulta</a>
-        <a href="#sobre" class="btn-ghost">Conheça a abordagem</a>
+        <a href="#abordagem" class="btn-ghost">Conheça a abordagem</a>
       </div>
     </div>
 
@@ -932,7 +977,7 @@
         <div class="divider"></div>
 
         <p>
-          Sou psicólogo formado pela Faculdade Anhanguera de Pindamonhangaba, com formação em Psicologia Analítica — a abordagem desenvolvida por Carl Gustav Jung que compreende a psique como um sistema vivo, em constante busca por equilíbrio e sentido.
+          Sou psicólogo formado pela Faculdade Anhanguera de Pindamonhangaba e pós-graduando em Psicologia Analítica — a abordagem desenvolvida por Carl Gustav Jung que compreende a psique como um sistema vivo, em constante busca por equilíbrio e sentido.
         </p>
         <p>
           Meu trabalho parte da convicção de que cada pessoa carrega em si mesma os recursos para o seu processo de individuação. Na clínica, utilizo sonhos, imagens, símbolos e a relação terapêutica como ferramentas para iluminar o que permanece inconsciente — e que muitas vezes governa nossas escolhas sem que percebamos.
@@ -956,12 +1001,39 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
             </svg>
             <div>
-              <strong>Psicologia Analítica (Jung)</strong><br>
-              Abordagem teórica e clínica principal
+              <strong>Pós-graduação em Psicologia Analítica (Jung)</strong><br>
+              Em andamento · abordagem clínica principal
             </div>
           </li>
 
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABORDAGEM -->
+  <section id="abordagem" class="section">
+    <div class="abordagem-header">
+      <p class="section-label">A abordagem</p>
+      <h2 class="section-title">O que é a terapia junguiana</h2>
+      <div class="divider"></div>
+      <p>
+        A Psicologia Analítica foi criada pelo psiquiatra suíço Carl Gustav Jung. Ela parte da ideia de que somos mais do que aquilo que sabemos sobre nós mesmos: existe uma parte inconsciente da psique que se expressa em sonhos, sintomas, repetições e nas imagens que nos tocam. A terapia é o espaço para escutar essa parte com calma e dar a ela um lugar na vida consciente.
+      </p>
+    </div>
+
+    <div class="abordagem-grid">
+      <div class="abordagem-item">
+        <h3>O inconsciente fala por imagens</h3>
+        <p>Sonhos, fantasias, símbolos e até aquilo que nos incomoda nos outros carregam sentidos. Na terapia, esse material é acolhido e compreendido junto com você, sem interpretações prontas.</p>
+      </div>
+      <div class="abordagem-item">
+        <h3>Individuação: tornar-se quem se&nbsp;é</h3>
+        <p>Jung chamou de individuação o processo de integrar partes de si que ficaram de lado, como a sombra, e de se diferenciar dos papéis que vestimos para o mundo, a persona. Não se trata de chegar a uma versão ideal, mas a uma relação mais honesta consigo mesmo.</p>
+      </div>
+      <div class="abordagem-item">
+        <h3>Como são as sessões</h3>
+        <p>O trabalho acontece na conversa, no seu ritmo. Não há tarefas para casa nem roteiro fixo: o que você traz conduz o processo, e a própria relação terapêutica faz parte do caminho. As sessões podem ser presenciais ou online.</p>
       </div>
     </div>
   </section>
@@ -1020,7 +1092,18 @@
           </svg>
         </div>
         <div class="faq-answer">
-          A abordagem junguiana parte da ideia de que grande parte do que nos afeta vive no inconsciente — sonhos, emoções inesperadas, padrões que se repetem. Nas sessões, exploramos esse material com curiosidade e sem julgamento. Não é uma terapia de "conselhos", mas de autoconhecimento profundo.
+          É uma terapia não diretiva: não dou conselhos, não passo tarefas para casa nem sigo um roteiro pronto. Você traz o que estiver vivendo, como acontecimentos, sentimentos, lembranças ou sonhos, e juntos buscamos compreender o sentido disso na sua vida. O processo segue o seu ritmo, e a própria relação terapêutica faz parte do trabalho.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          A Psicologia Analítica é científica ou tem a ver com misticismo?
+          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </div>
+        <div class="faq-answer">
+          É uma abordagem da Psicologia, praticada por psicólogos registrados no CRP e estudada em universidades no Brasil e no exterior. Jung pesquisou mitos, religiões e símbolos porque eles mostram como a psique funciona, não como crença ou prática espiritual: na terapia, nenhuma visão de mundo é imposta ao paciente. Quanto às pesquisas, as psicoterapias de base psicodinâmica, família à qual a abordagem junguiana pertence, têm eficácia demonstrada em estudos; os estudos específicos sobre a Psicologia Analítica são menos numerosos, mas vêm crescendo.
         </div>
       </div>
 
