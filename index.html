@@ -2,26 +2,13 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marco Aurélio Souza | Psicólogo Clínico em Pindamonhangaba e Online</title>
-  <meta name="description" content="Psicoterapia individual baseada na Psicologia Analítica (Jung). Atendimento presencial em Pindamonhangaba e online para brasileiros no mundo." />
-  <meta name="keywords" content="psicólogo clínico online, psicoterapia junguiana, psicólogo Pindamonhangaba, atendimento psicológico brasileiros exterior, terapia online adultos, psicologia analítica Jung" />
-  <meta name="author" content="Marco Aurélio Souza" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Terapia individual online para homens | Marco Aurélio Souza – Psicólogo</title>
+  <meta name="description" content="Terapia individual online para homens que atravessam crise no relacionamento, separação ou divórcio. Psicologia Analítica (Jung). Marco Aurélio Souza, CRP 06/237122." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://marcoaureliopsicologo.com.br/" />
+  <link rel="canonical" href="https://marcoaureliopsicologo.com.br/homens/" />
 
-  <!-- Open Graph (WhatsApp, Facebook) -->
-  <meta property="og:title" content="Marco Aurélio Souza | Psicólogo Clínico em Pindamonhangaba e Online" />
-  <meta property="og:description" content="Atendimento psicológico com abordagem Junguiana para adultos e adolescentes. Presencial em Pindamonhangaba (SP) e online para brasileiros em qualquer país." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://marcoaureliopsicologo.com.br/" />
-  <meta property="og:locale" content="pt_BR" />
-
-  <!-- Twitter/X -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Marco Aurélio Souza | Psicólogo Clínico em Pindamonhangaba e Online" />
-  <meta name="twitter:description" content="Psicoterapia Junguiana — presencial em Pindamonhangaba e online para brasileiros no exterior." />
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) — a mesma do site -->
   <!-- Consentimento de cookies: precisa vir antes da tag do Google -->
   <script src="/cookies.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2LBNKLDVH"></script>
@@ -30,10 +17,10 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-Y2LBNKLDVH', { allow_google_signals: false, allow_ad_personalization_signals: false });
+    gtag('config', 'AW-18496434067', { allow_ad_personalization_signals: false }); // Google Ads
   </script>
 
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -42,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
-    /* ── TOKENS ── */
+    /* ── TOKENS (iguais ao site) ── */
     :root {
       --verde:   #1B3A2D;
       --teal:    #1B3A4B;
@@ -56,8 +43,6 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html { scroll-behavior: smooth; }
-
     body {
       font-family: 'DM Sans', sans-serif;
       font-weight: 300;
@@ -66,7 +51,9 @@
       overflow-x: hidden;
     }
 
-    /* ── NAV ── */
+    a:focus-visible { outline: 2px solid var(--ouro); outline-offset: 3px; }
+
+    /* ── NAV (só o logo, sem menu: a página tem uma saída só, o WhatsApp) ── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -74,64 +61,37 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1.2rem 2.5rem;
+      padding: calc(1rem + env(safe-area-inset-top, 0px)) 2.5rem 1rem;
       background: rgba(253,251,247,0.92);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid rgba(201,168,76,0.15);
     }
-
-    .nav-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-weight: 300;
-      font-size: 1.25rem;
-      color: var(--verde);
-      letter-spacing: 0.02em;
-      text-decoration: none;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 0.8rem;
-      font-weight: 400;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--txt-lt);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover { color: var(--ouro); }
+    .nav-logo img { height: 44px; width: auto; display: block; }
 
     .nav-cta {
       background: var(--ouro);
-      color: var(--branco) !important;
+      color: var(--branco);
       padding: 0.55rem 1.2rem;
       border-radius: 2px;
-      font-weight: 500 !important;
-      letter-spacing: 0.08em !important;
-      text-transform: uppercase !important;
-      font-size: 0.75rem !important;
-      transition: background 0.2s !important;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      text-decoration: none;
+      transition: background 0.2s;
     }
-    .nav-cta:hover { background: var(--ouro-lt) !important; color: var(--branco) !important; }
+    .nav-cta:hover { background: var(--ouro-lt); }
 
     /* ── HERO ── */
     #hero {
       min-height: 100svh;
       background: var(--verde);
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.15fr 0.85fr;
       align-items: center;
       position: relative;
       overflow: hidden;
     }
-
     .hero-bg-ornament {
       position: absolute;
       right: -10vw;
@@ -150,27 +110,19 @@
       border-radius: 50%;
       border: 1px solid rgba(201,168,76,0.09);
     }
-
     .hero-text {
       padding: 8rem 3rem 6rem 5vw;
       position: relative;
       z-index: 1;
     }
-
     .hero-eyebrow {
       font-size: 0.72rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--ouro);
       margin-bottom: 1.8rem;
-    }
-
-    h1.hero-eyebrow {
-      font-family: inherit;
-      font-weight: 400;
       line-height: 1.6;
     }
-
     .hero-title {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
@@ -180,31 +132,18 @@
       color: var(--creme);
       margin-bottom: 1.6rem;
     }
-
-    .hero-title em {
-      font-style: normal;
-      color: var(--ouro);
-    }
-
     .hero-sub {
-      font-size: 0.95rem;
+      font-size: 1rem;
       line-height: 1.8;
-      color: rgba(245,242,236,0.72);
-      max-width: 420px;
+      color: rgba(245,242,236,0.75);
+      max-width: 440px;
       margin-bottom: 2.6rem;
     }
-
-    .hero-actions {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
     .btn-primary {
       display: inline-block;
       background: var(--ouro);
       color: var(--branco);
-      padding: 0.85rem 2rem;
+      padding: 0.95rem 2rem;
       border-radius: 2px;
       font-size: 0.8rem;
       font-weight: 500;
@@ -215,39 +154,26 @@
     }
     .btn-primary:hover { background: var(--ouro-lt); }
 
-    .btn-ghost {
-      display: inline-block;
-      border: 1px solid rgba(201,168,76,0.5);
-      color: var(--ouro);
-      padding: 0.85rem 2rem;
-      border-radius: 2px;
-      font-size: 0.8rem;
-      font-weight: 400;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      text-decoration: none;
-      transition: border-color 0.2s, color 0.2s;
-    }
-    .btn-ghost:hover { border-color: var(--ouro); color: var(--ouro-lt); }
-
     .hero-card {
       position: relative;
       z-index: 1;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      gap: 1.5rem;
       padding: 6rem 5vw 6rem 2rem;
     }
-
+    .hero-logo-img {
+      width: clamp(200px, 24vw, 320px);
+      height: auto;
+      filter: drop-shadow(0 8px 32px rgba(201,168,76,0.25));
+    }
     .crp-badge {
-      position: absolute;
-      top: 35%;
-      right: 8vw;
-      background: rgba(27,58,45,0.7);
+      background: rgba(27,58,45,0.75);
       border: 1px solid rgba(201,168,76,0.3);
       border-radius: 4px;
       padding: 1rem 1.4rem;
-      backdrop-filter: blur(4px);
+      text-align: center;
     }
     .crp-badge .label {
       font-size: 0.65rem;
@@ -259,15 +185,16 @@
     }
     .crp-badge .value {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1rem;
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
       color: var(--creme);
-      font-style: italic;
+      font-variant-numeric: lining-nums;
     }
 
-    /* ── SECTION SHARED ── */
-    .section {
-      padding: 6rem 5vw;
-    }
+    /* ── SEÇÕES ── */
+    .section { padding: 6rem 5vw; }
+    .wrap { max-width: 1100px; margin: 0 auto; }
+    .wrap-texto p { max-width: 680px; }
 
     .section-label {
       font-size: 0.68rem;
@@ -276,7 +203,6 @@
       color: var(--ouro);
       margin-bottom: 0.8rem;
     }
-
     .section-title {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
@@ -286,90 +212,59 @@
       color: var(--verde);
       margin-bottom: 1.5rem;
     }
+    .divider { width: 48px; height: 1px; background: var(--ouro); margin-bottom: 2rem; }
 
-    .divider {
-      width: 48px;
-      height: 1px;
-      background: var(--ouro);
-      margin-bottom: 2rem;
+    .texto p {
+      font-size: 1rem;
+      line-height: 1.85;
+      margin-bottom: 1.4rem;
     }
 
-    /* ── ABORDAGEM ── */
-    #abordagem {
-      background: var(--verde);
-      color: var(--creme);
-    }
-    #abordagem .section-title { color: var(--creme); }
-    .abordagem-header {
-      max-width: 1100px;
-      margin: 0 auto 3.5rem;
-    }
-    .abordagem-header p:not(.section-label) {
-      font-size: 0.9rem;
-      line-height: 1.8;
-      color: rgba(245,242,236,0.75);
-      max-width: 640px;
-    }
-    .abordagem-grid {
+    /* Para quem é */
+    #para-quem { background: var(--creme); }
+
+    /* Como trabalho (verde, como a seção Abordagem do site) */
+    #como-trabalho { background: var(--verde); color: var(--creme); }
+    #como-trabalho .section-title { color: var(--creme); }
+    #como-trabalho .texto p { color: rgba(245,242,236,0.78); }
+
+    /* Como funciona (grade como "O que ofereço") */
+    #como-funciona { background: var(--branco); }
+    .funciona-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1px;
-      background: rgba(245,242,236,0.12);
-      border: 1px solid rgba(245,242,236,0.12);
-      max-width: 1100px;
-      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5px;
+      background: rgba(27,58,45,0.08);
+      border: 1px solid rgba(27,58,45,0.08);
     }
-    .abordagem-item {
-      background: var(--verde);
-      padding: 2.5rem;
-    }
-    .abordagem-item h3 {
+    .funciona-card { background: var(--branco); padding: 2.2rem; }
+    .funciona-card h3 {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
       font-weight: 400;
       font-size: 1.35rem;
-      color: var(--creme);
-      margin-bottom: 0.8rem;
+      color: var(--verde);
+      margin-bottom: 0.7rem;
     }
-    .abordagem-item p {
-      font-size: 0.88rem;
-      line-height: 1.75;
-      color: rgba(245,242,236,0.72);
-    }
+    .funciona-card p { font-size: 0.9rem; line-height: 1.75; color: var(--txt-lt); }
 
-    /* ── SOBRE ── */
-    #sobre {
-      background: var(--creme);
-    }
-
+    /* Sobre */
+    #sobre { background: var(--creme); }
     .sobre-grid {
       display: grid;
-      grid-template-columns: 1fr 1.4fr;
+      grid-template-columns: 0.8fr 1.4fr;
       gap: 5rem;
       align-items: start;
-      max-width: 1100px;
-      margin: 0 auto;
     }
-
-    .sobre-aside {
-      position: sticky;
-      top: 6rem;
-    }
-
-    .sobre-foto-placeholder {
+    .sobre-foto {
       width: 100%;
       aspect-ratio: 3/4;
       background: linear-gradient(160deg, var(--verde) 0%, var(--teal) 100%);
       border-radius: 2px;
-      position: relative;
       overflow: hidden;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
     }
-
-    .sobre-foto-placeholder::after {
-      content: '';
-    }
-
+    .sobre-foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 5%; display: block; }
     .sobre-foto-caption {
       font-size: 0.72rem;
       letter-spacing: 0.12em;
@@ -378,311 +273,35 @@
       text-align: center;
     }
 
-    .sobre-content p {
-      font-size: 1rem;
-      line-height: 1.85;
-      color: var(--txt);
-      margin-bottom: 1.4rem;
-    }
-
-    .formacao-list {
-      list-style: none;
-      margin-top: 2rem;
-    }
-
-    .formacao-list li {
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-      padding: 0.9rem 0;
-      border-top: 1px solid rgba(27,58,45,0.08);
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-
-    .formacao-list li:last-child { border-bottom: 1px solid rgba(27,58,45,0.08); }
-
-    .formacao-icon {
-      width: 20px;
-      min-width: 20px;
-      height: 20px;
-      margin-top: 2px;
-      color: var(--ouro);
-    }
-
-    /* ── SERVIÇOS ── */
-    #servicos {
-      background: var(--branco);
-    }
-
-    .servicos-header {
-      max-width: 1100px;
-      margin: 0 auto 3.5rem;
-    }
-
-    .servicos-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5px;
-      background: rgba(27,58,45,0.08);
-      border: 1px solid rgba(27,58,45,0.08);
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .servico-card {
-      background: var(--branco);
-      padding: 2.5rem;
-      transition: background 0.25s;
-    }
-
-    .servico-card:hover { background: var(--creme); }
-
-    .servico-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-size: 2.5rem;
-      color: rgba(201,168,76,0.25);
-      line-height: 1;
-      margin-bottom: 1.2rem;
-    }
-
-    .servico-titulo {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-size: 1.35rem;
-      color: var(--verde);
-      margin-bottom: 0.8rem;
-    }
-
-    .servico-desc {
-      font-size: 0.88rem;
-      line-height: 1.75;
-      color: var(--txt-lt);
-    }
-
-    .servico-tag {
-      display: inline-block;
-      margin-top: 1.2rem;
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--ouro);
-      border: 1px solid rgba(201,168,76,0.35);
-      padding: 0.25rem 0.6rem;
-      border-radius: 2px;
-    }
-
-    /* ── FAQ ── */
-    #faq {
-      background: var(--verde);
-      color: var(--creme);
-    }
-
-    #faq .section-title { color: var(--creme); }
-
-    .faq-grid {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .faq-item {
-      border-top: 1px solid rgba(245,242,236,0.12);
-      padding: 1.6rem 0;
-      cursor: pointer;
-    }
-
-    .faq-item:last-child { border-bottom: 1px solid rgba(245,242,236,0.12); }
-
-    .faq-question {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-size: 1.1rem;
-      color: var(--creme);
-      line-height: 1.4;
-    }
-
-    .faq-icon {
-      min-width: 20px;
-      width: 20px;
-      height: 20px;
-      color: var(--ouro);
-      transition: transform 0.25s;
-    }
-
-    .faq-item.open .faq-icon { transform: rotate(45deg); }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease, padding 0.25s;
-      font-size: 0.9rem;
-      line-height: 1.8;
+    /* Contato final */
+    #contato { background: var(--verde); color: var(--creme); text-align: center; }
+    #contato .section-title { color: var(--creme); }
+    #contato .divider { margin: 0 auto 2rem; }
+    #contato p.sub {
       color: rgba(245,242,236,0.75);
-    }
-
-    .faq-item.open .faq-answer {
-      max-height: 600px;
-      padding-top: 1rem;
-    }
-
-    /* ── CONTATO ── */
-    #contato {
-      background: var(--creme);
-    }
-
-    .contato-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      align-items: start;
-    }
-
-    .contato-info p {
-      font-size: 0.95rem;
+      font-size: 1rem;
       line-height: 1.8;
-      color: var(--txt-lt);
-      margin-bottom: 2rem;
+      max-width: 520px;
+      margin: 0 auto 2.4rem;
     }
+    #contato .nota { margin-top: 1.4rem; font-size: 0.85rem; color: rgba(245,242,236,0.55); }
 
-    .contato-links {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .contato-link {
-      display: flex;
-      align-items: center;
-      gap: 0.9rem;
-      text-decoration: none;
-      color: var(--txt);
-      font-size: 0.9rem;
-      transition: color 0.2s;
-    }
-
-    .contato-link:hover { color: var(--ouro); }
-
-    .contato-link-icon {
-      width: 40px;
-      height: 40px;
-      min-width: 40px;
-      background: var(--verde);
-      border-radius: 2px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .contato-link-icon svg {
-      width: 18px;
-      height: 18px;
-      color: var(--ouro);
-    }
-
-    .agenda-embed {
-      background: var(--branco);
-      border: 1px solid rgba(27,58,45,0.12);
-      border-radius: 4px;
-      padding: 1.5rem;
-      text-align: center;
-    }
-
-    .agenda-embed-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-size: 1.3rem;
-      color: var(--verde);
-      margin-bottom: 0.6rem;
-    }
-
-    .agenda-embed-sub {
-      font-size: 0.82rem;
-      color: var(--txt-lt);
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
-    }
-
-    .agenda-whatsapp-cta {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 1.2rem;
-      padding: 3rem 1.5rem;
-      background: var(--branco);
-      border: 1px solid rgba(27,58,45,0.1);
-      border-radius: 4px;
-    }
-    .wa-cta-icon {
-      width: 48px;
-      height: 48px;
-      color: #25D366;
-    }
-    .wa-cta-text {
-      font-size: 0.9rem;
-      line-height: 1.7;
-      color: var(--txt-lt);
-      max-width: 320px;
-    }
-
-    .agenda-iframe-wrap {
-      position: relative;
-      width: 100%;
-      height: 580px;
-      border-radius: 2px;
-      overflow: hidden;
-      background: #f0ede6;
-    }
-
-    .agenda-iframe-wrap iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    /* ── FOOTER ── */
+    /* ── FOOTER (como o do site) ── */
     footer {
       background: #111;
-      padding: 2.5rem 5vw;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
+      padding: 2.5rem 5vw calc(2.5rem + env(safe-area-inset-bottom, 0px));
+      color: rgba(245,242,236,0.55);
+      font-size: 0.8rem;
+      line-height: 1.8;
     }
+    footer .linha { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    footer a { color: var(--ouro); text-decoration: none; }
+    footer .emergencia { margin-top: 1.2rem; color: rgba(245,242,236,0.45); font-size: 0.75rem; }
 
-    .footer-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-weight: 300;
-      font-size: 1.1rem;
-      color: var(--creme);
-      text-decoration: none;
-    }
-
-    .footer-copy {
-      font-size: 0.75rem;
-      color: rgba(245,242,236,0.4);
-    }
-
-    .footer-insta a {
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: var(--ouro);
-      text-decoration: none;
-    }
-
-    /* ── WHATSAPP FLOAT ── */
+    /* ── WHATSAPP FLOAT (igual ao site) ── */
     .wa-float {
       position: fixed;
-      bottom: 1.8rem;
+      bottom: calc(1.8rem + env(safe-area-inset-bottom, 0px));
       right: 1.8rem;
       z-index: 200;
       background: #25D366;
@@ -694,243 +313,34 @@
       justify-content: center;
       box-shadow: 0 4px 16px rgba(0,0,0,0.18);
       transition: transform 0.2s;
-      text-decoration: none;
     }
     .wa-float:hover { transform: scale(1.08); }
     .wa-float svg { width: 28px; height: 28px; color: #fff; }
 
-    /* ── HERO QUOTE ── */
-    .hero-quote {
-      text-align: center;
-      max-width: 360px;
-      margin-bottom: 1.5rem;
-    }
-    .hero-quote p {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-size: 1rem;
-      line-height: 1.7;
-      color: rgba(245,242,236,0.85);
-      margin-bottom: 0.5rem;
-    }
-    .hero-quote cite {
-      font-size: 0.7rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--ouro);
-      font-style: normal;
-    }
-
-    /* ── CITAÇÃO HERO ── */
-    .hero-citacao {
-      margin-top: 2.5rem;
-      padding-top: 2rem;
-      border-top: 1px solid rgba(201,168,76,0.2);
-      text-align: center;
-      max-width: 340px;
-    }
-    .hero-citacao blockquote {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-weight: 300;
-      font-size: 1rem;
-      line-height: 1.7;
-      color: rgba(245,242,236,0.75);
-      margin: 0 0 0.6rem;
-    }
-    .hero-citacao cite {
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--ouro);
-      font-style: normal;
-    }
-
-    /* ── HERO LOGO ── */
-    .hero-logo-wrap {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-    }
-
-    .hero-logo-img {
-      width: clamp(220px, 28vw, 380px);
-      height: auto;
-      filter: drop-shadow(0 8px 32px rgba(201,168,76,0.25));
-      animation: floatLogo 5s ease-in-out infinite;
-    }
-
-    @keyframes floatLogo {
-      0%, 100% { transform: translateY(0px); }
-      50%       { transform: translateY(-10px); }
-    }
-
-    /* reposicionar badge abaixo do logo */
-    .hero-logo-wrap .crp-badge {
-      position: static;
-      background: rgba(27,58,45,0.75);
-    }
-
-    /* ── RESPONSIVE ── */
-    /* ── HAMBURGER ── */
-    .nav-hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 4px;
-    }
-    .nav-hamburger span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--verde);
-      border-radius: 2px;
-      transition: all 0.3s;
-    }
-    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
-    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-    .nav-mobile-menu {
-      display: none;
-      position: fixed;
-      top: 60px; left: 0; right: 0;
-      background: rgba(253,251,247,0.97);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(201,168,76,0.2);
-      padding: 1.5rem 2rem;
-      flex-direction: column;
-      gap: 1.2rem;
-      z-index: 99;
-    }
-    .nav-mobile-menu.open { display: flex; }
-    .nav-mobile-menu a {
-      font-size: 0.9rem;
-      font-weight: 400;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--txt-lt);
-      text-decoration: none;
-      padding: 0.4rem 0;
-      border-bottom: 1px solid rgba(27,58,45,0.07);
-    }
-    .nav-mobile-menu a.nav-cta {
-      background: var(--ouro);
-      color: var(--branco) !important;
-      padding: 0.75rem 1.2rem;
-      border-radius: 2px;
-      border: none;
-      text-align: center;
-      margin-top: 0.5rem;
-    }
-
+    /* ── RESPONSIVO ── */
     @media (max-width: 768px) {
-      nav { padding: 1rem 1.2rem; }
-      .nav-links { display: none; }
-      .nav-hamburger { display: flex; }
-
-      #hero { grid-template-columns: 1fr; min-height: 100svh; }
-      .hero-text { padding: 7rem 1.5rem 3rem; }
-      .hero-card { display: flex; justify-content: center; padding: 0 1.5rem 3rem; }
-      .hero-logo-img { width: 200px; }
-
-      .sobre-grid,
-      .contato-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-      .sobre-aside { position: static; }
-      .sobre-foto-placeholder { max-width: 260px; margin: 0 auto 1.5rem; }
-
+      nav { padding: calc(0.8rem + env(safe-area-inset-top, 0px)) 1.2rem 0.8rem; }
+      .nav-logo img { height: 38px; }
+      #hero { grid-template-columns: 1fr; }
+      .hero-text { padding: 7rem 1.5rem 2.5rem; }
+      .hero-card { padding: 0 1.5rem 3.5rem; }
+      .hero-logo-img { width: 160px; }
+      .hero-bg-ornament { width: 120vw; height: 120vw; right: -40vw; }
       .section { padding: 4rem 1.5rem; }
-
-      footer { flex-direction: column; text-align: center; }
+      .sobre-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .sobre-aside { max-width: 260px; margin: 0 auto; width: 100%; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation: none !important; transition: none !important; }
+      *, *::before, *::after { transition: none !important; }
     }
   </style>
-  <!-- Dados estruturados (Schema.org) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "@id": "https://marcoaureliopsicologo.com.br/#consultorio",
-    "name": "Marco Aurélio Souza – Psicólogo",
-    "description": "Psicoterapia individual baseada na Psicologia Analítica (Jung). Atendimento presencial em Pindamonhangaba (SP) e online para brasileiros no Brasil e no exterior.",
-    "url": "https://marcoaureliopsicologo.com.br/",
-    "logo": "https://marcoaureliopsicologo.com.br/logo.png",
-    "image": "https://marcoaureliopsicologo.com.br/foto.jpg",
-    "telephone": "+55-12-99172-6945",
-    "email": "souza.axis.psicologia@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Pindamonhangaba",
-      "addressRegion": "SP",
-      "addressCountry": "BR"
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Pindamonhangaba" },
-      { "@type": "City", "name": "Taubaté" },
-      { "@type": "City", "name": "Tremembé" },
-      { "@type": "City", "name": "Roseira" },
-      { "@type": "Country", "name": "Brasil" }
-    ],
-    "availableLanguage": "pt-BR",
-    "sameAs": ["https://instagram.com/marcoaurelio.psico"],
-    "potentialAction": {
-      "@type": "CommunicateAction",
-      "name": "Agendar pelo WhatsApp",
-      "target": "https://wa.me/5512991726945"
-    },
-    "employee": {
-      "@type": "Person",
-      "@id": "https://marcoaureliopsicologo.com.br/#marco",
-      "name": "Marco Aurélio Souza",
-      "jobTitle": "Psicólogo",
-      "knowsAbout": ["Psicologia Analítica", "Psicologia Junguiana", "Psicoterapia"],
-      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Faculdade Anhanguera de Pindamonhangaba" },
-      "hasCredential": {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Registro profissional",
-        "name": "CRP 06/237122",
-        "recognizedBy": { "@type": "Organization", "name": "Conselho Regional de Psicologia de São Paulo (CRP-SP)" }
-      },
-      "sameAs": ["https://instagram.com/marcoaurelio.psico"]
-    }
-  }
-  </script>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
-    <!-- Menu mobile -->
-    <div class="nav-mobile-menu" id="mobileMenu">
-      <a href="#sobre" onclick="closeMobile()">Sobre mim</a>
-      <a href="#abordagem" onclick="closeMobile()">Abordagem</a>
-      <a href="#servicos" onclick="closeMobile()">Serviços</a>
-      <a href="#faq" onclick="closeMobile()">FAQ</a>
-      <a href="blog.html" onclick="closeMobile()">Blog</a>
-      <a href="#contato" class="nav-cta" onclick="closeMobile()">Agendar consulta</a>
-    </div>
-
-    <a class="nav-logo" href="#hero"><img src="logo.png" alt="Marco Aurélio Psicólogo" style="height:44px;width:auto;vertical-align:middle;" /></a>
-    <button class="nav-hamburger" id="hamburger" onclick="toggleMobile()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-
-    <ul class="nav-links">
-      <li><a href="#sobre">Sobre mim</a></li>
-      <li><a href="#abordagem">Abordagem</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="#contato" class="nav-cta">Agendar consulta</a></li>
-    </ul>
+    <span class="nav-logo"><img src="/logo.png" alt="Marco Aurélio Psicólogo" /></span>
+    <a class="nav-cta wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia%20online." target="_blank" rel="noopener">WhatsApp</a>
   </nav>
 
   <!-- HERO -->
@@ -938,29 +348,67 @@
     <div class="hero-bg-ornament"></div>
 
     <div class="hero-text">
-      <h1 class="hero-eyebrow">Marco Aurélio Souza · Psicólogo<br>Atendimento em Pindamonhangaba e online</h1>
-      <p class="hero-title">
-        O autoconhecimento<br>começa onde <em>a máscara</em><br>termina.
-      </p>
+      <p class="hero-eyebrow">Marco Aurélio Souza · Psicólogo<br>Atendimento online</p>
+      <h1 class="hero-title">Terapia individual online para homens</h1>
       <p class="hero-sub">
-        Atendimento psicológico com base na Psicologia Analítica de Carl Gustav Jung — presencial em Pindamonhangaba (SP) e online para brasileiros em qualquer parte do mundo.
+        Um espaço sigiloso para falar sobre o que está acontecendo no seu relacionamento: uma crise no casamento, uma separação, um divórcio.
       </p>
-      <div class="hero-actions">
-        <a href="#contato" class="btn-primary">Agendar consulta</a>
-        <a href="#abordagem" class="btn-ghost">Conheça a abordagem</a>
-      </div>
+      <a class="btn-primary wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia%20online." target="_blank" rel="noopener">Conversar pelo WhatsApp</a>
     </div>
 
     <div class="hero-card">
-      <div class="hero-logo-wrap">
-        <blockquote class="hero-quote">
-          <p>"Onde o amor impera, não há desejo de poder; e onde o poder predomina, há falta de amor. Um é a sombra do outro."</p>
-          <cite>— Carl Gustav Jung</cite>
-        </blockquote>
-        <img src="logo.png" alt="Marco Aurélio Psicólogo" class="hero-logo-img" />
-        <div class="crp-badge">
-          <span class="label">CRP</span>
-          <span class="value" style="font-family:'Cormorant Garamond',serif;font-style:normal;font-weight:400;letter-spacing:0.08em;font-variant-numeric:lining-nums;">06/237122</span>
+      <img src="/logo.png" alt="" class="hero-logo-img" />
+      <div class="crp-badge">
+        <span class="label">CRP</span>
+        <span class="value">06/237122</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM É -->
+  <section id="para-quem" class="section">
+    <div class="wrap wrap-texto texto">
+      <p class="section-label">Para quem é</p>
+      <h2 class="section-title">Quando a vida a dois<br>deixa de fazer sentido.</h2>
+      <div class="divider"></div>
+      <p>Para homens que estão atravessando um momento difícil no relacionamento e não encontram onde falar sobre isso. Às vezes é uma crise que se arrasta há tempo. Às vezes é uma separação recente, ou um divórcio que mudou a casa, a rotina e a convivência com os filhos.</p>
+      <p>Muitos homens cresceram ouvindo que deveriam dar conta de tudo sozinhos. Na terapia, isso não é exigido de você.</p>
+    </div>
+  </section>
+
+  <!-- COMO TRABALHO -->
+  <section id="como-trabalho" class="section">
+    <div class="wrap wrap-texto texto">
+      <p class="section-label">A abordagem</p>
+      <h2 class="section-title">Como eu trabalho</h2>
+      <div class="divider"></div>
+      <p>Atendo a partir da Psicologia Analítica, de Carl Gustav Jung. Na prática, as sessões não seguem um roteiro de tarefas nem trazem conselhos prontos. O trabalho parte do que você traz: o que aconteceu, o que sente, as situações que se repetem, os sonhos.</p>
+      <p>A proposta é compreender o que esse momento diz sobre você e sobre a sua história, no seu tempo.</p>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="section">
+    <div class="wrap">
+      <p class="section-label">Atendimento</p>
+      <h2 class="section-title">Como funciona</h2>
+      <div class="divider"></div>
+      <div class="funciona-grid">
+        <div class="funciona-card">
+          <h3>Online, por videochamada</h3>
+          <p>De qualquer lugar do Brasil, e também para brasileiros que vivem no exterior e querem ser atendidos em português.</p>
+        </div>
+        <div class="funciona-card">
+          <h3>Sigilo</h3>
+          <p>O que é dito nas sessões é protegido pelo Código de Ética Profissional do Psicólogo.</p>
+        </div>
+        <div class="funciona-card">
+          <h3>Horários</h3>
+          <p>Combinados no primeiro contato, de acordo com a sua rotina e a disponibilidade da agenda.</p>
+        </div>
+        <div class="funciona-card">
+          <h3>O primeiro passo</h3>
+          <p>Você manda uma mensagem pelo WhatsApp, conversamos sobre o que você procura e, se fizer sentido para você, combinamos o primeiro horário.</p>
         </div>
       </div>
     </div>
@@ -968,314 +416,55 @@
 
   <!-- SOBRE -->
   <section id="sobre" class="section">
-    <div class="sobre-grid">
+    <div class="wrap sobre-grid">
       <div class="sobre-aside">
-        <div class="sobre-foto-placeholder"><img src="foto.jpg" alt="Marco Aurélio Psicólogo" style="width:100%;height:100%;object-fit:cover;object-position:50% 5%;border-radius:2px;" /></div>
+        <div class="sobre-foto"><img src="/foto.jpg" alt="Marco Aurélio Souza, psicólogo" /></div>
         <p class="sobre-foto-caption">Marco Aurélio · Psicólogo</p>
       </div>
-
-      <div class="sobre-content">
-        <p class="section-label">Sobre mim</p>
-        <h2 class="section-title">Uma escuta que<br>vai além do óbvio.</h2>
+      <div class="texto">
+        <p class="section-label">Quem atende</p>
+        <h2 class="section-title">Marco Aurélio de Oliveira de Souza</h2>
         <div class="divider"></div>
-
-        <p>
-          Sou psicólogo formado pela Faculdade Anhanguera de Pindamonhangaba e pós-graduando em Psicologia Analítica — a abordagem desenvolvida por Carl Gustav Jung que compreende a psique como um sistema vivo, em constante busca por equilíbrio e sentido.
-        </p>
-        <p>
-          Meu trabalho parte da convicção de que cada pessoa carrega em si mesma os recursos para o seu processo de individuação. Na clínica, utilizo sonhos, imagens, símbolos e a relação terapêutica como ferramentas para iluminar o que permanece inconsciente — e que muitas vezes governa nossas escolhas sem que percebamos.
-        </p>
-        <p>
-          Atendo presencialmente em Pindamonhangaba e também online — inclusive para brasileiros que moram fora do Brasil e querem ser atendidos em português, por um psicólogo registrado no CRP-SP (CRP 06/237122).
-        </p>
-
-        <ul class="formacao-list">
-          <li>
-            <svg class="formacao-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-            </svg>
-            <div>
-              <strong>Graduação em Psicologia</strong><br>
-              Faculdade Anhanguera de Pindamonhangaba
-            </div>
-          </li>
-          <li>
-            <svg class="formacao-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-            </svg>
-            <div>
-              <strong>Pós-graduação em Psicologia Analítica (Jung)</strong><br>
-              Em andamento · abordagem clínica principal
-            </div>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABORDAGEM -->
-  <section id="abordagem" class="section">
-    <div class="abordagem-header">
-      <p class="section-label">A abordagem</p>
-      <h2 class="section-title">O que é a terapia junguiana</h2>
-      <div class="divider"></div>
-      <p>
-        A Psicologia Analítica foi criada pelo psiquiatra suíço Carl Gustav Jung. Ela parte da ideia de que somos mais do que aquilo que sabemos sobre nós mesmos: existe uma parte inconsciente da psique que se expressa em sonhos, sintomas, repetições e nas imagens que nos tocam. A terapia é o espaço para escutar essa parte com calma e dar a ela um lugar na vida consciente.
-      </p>
-    </div>
-
-    <div class="abordagem-grid">
-      <div class="abordagem-item">
-        <h3>O inconsciente fala por imagens</h3>
-        <p>Sonhos, fantasias, símbolos e até aquilo que nos incomoda nos outros carregam sentidos. Na terapia, esse material é acolhido e compreendido junto com você, sem interpretações prontas.</p>
-      </div>
-      <div class="abordagem-item">
-        <h3>Individuação: tornar-se quem se&nbsp;é</h3>
-        <p>Jung chamou de individuação o processo de integrar partes de si que ficaram de lado, como a sombra, e de se diferenciar dos papéis que vestimos para o mundo, a persona. Não se trata de chegar a uma versão ideal, mas a uma relação mais honesta consigo mesmo.</p>
-      </div>
-      <div class="abordagem-item">
-        <h3>Como são as sessões</h3>
-        <p>O trabalho acontece na conversa, no seu ritmo. Não há tarefas para casa nem roteiro fixo: o que você traz conduz o processo, e a própria relação terapêutica faz parte do caminho. As sessões podem ser presenciais ou online.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVIÇOS -->
-  <section id="servicos" class="section">
-    <div class="servicos-header">
-      <p class="section-label">Modalidades de atendimento</p>
-      <h2 class="section-title">O que ofereço</h2>
-      <div class="divider"></div>
-    </div>
-
-    <div class="servicos-grid">
-      <div class="servico-card">
-        <div class="servico-num">01</div>
-        <h3 class="servico-titulo">Psicoterapia Individual</h3>
-        <p class="servico-desc">
-          Processo terapêutico contínuo com base junguiana. Trabalhamos com sonhos, complexos, arquétipos e o material inconsciente que emerge na relação terapêutica — em direção à individuação e ao maior contato com o Self.
-        </p>
-        <span class="servico-tag">Presencial · Online</span>
-      </div>
-
-      <div class="servico-card">
-        <div class="servico-num">02</div>
-        <h3 class="servico-titulo">Atendimento para Brasileiros no Exterior</h3>
-        <p class="servico-desc">
-          Você mora fora do Brasil e quer ser atendido em português? Ofereço sessões online para brasileiros em qualquer país — com a mesma qualidade, na língua e na cultura que você conhece.
-        </p>
-        <span class="servico-tag">Online · Internacional</span>
-      </div>
-
-      <div class="servico-card">
-        <div class="servico-num">03</div>
-        <h3 class="servico-titulo">Orientação Psicológica</h3>
-        <p class="servico-desc">
-          Processo de menor duração voltado para momentos específicos de crise, transição ou tomada de decisão. Ideal para quem busca um espaço de escuta qualificada sem necessariamente entrar em um processo terapêutico longo.
-        </p>
-        <span class="servico-tag">Presencial · Online</span>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="section">
-    <div class="faq-grid">
-      <p class="section-label" style="color: var(--ouro)">Perguntas frequentes</p>
-      <h2 class="section-title">Dúvidas comuns</h2>
-      <div class="divider"></div>
-
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          Como funciona a Psicologia Analítica na prática?
-          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-          </svg>
-        </div>
-        <div class="faq-answer">
-          É uma terapia não diretiva: não dou conselhos, não passo tarefas para casa nem sigo um roteiro pronto. Você traz o que estiver vivendo, como acontecimentos, sentimentos, lembranças ou sonhos, e juntos buscamos compreender o sentido disso na sua vida. O processo segue o seu ritmo, e a própria relação terapêutica faz parte do trabalho.
-        </div>
-      </div>
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          A Psicologia Analítica é científica ou tem a ver com misticismo?
-          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-          </svg>
-        </div>
-        <div class="faq-answer">
-          É uma abordagem da Psicologia, praticada por psicólogos registrados no CRP e estudada em universidades no Brasil e no exterior. Jung pesquisou mitos, religiões e símbolos porque eles mostram como a psique funciona, não como crença ou prática espiritual: na terapia, nenhuma visão de mundo é imposta ao paciente. Quanto às pesquisas, as psicoterapias de base psicodinâmica, família à qual a abordagem junguiana pertence, têm eficácia demonstrada em estudos; os estudos específicos sobre a Psicologia Analítica são menos numerosos, mas vêm crescendo.
-        </div>
-      </div>
-
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          Quantas sessões são necessárias?
-          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-          </svg>
-        </div>
-        <div class="faq-answer">
-          Cada processo é único. Geralmente começamos com uma sessão de acolhimento para entender sua demanda e, a partir daí, definimos juntos o ritmo mais adequado — semanal ou quinzenal. Não existe um número fixo de sessões pré-determinado.
-        </div>
-      </div>
-
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          O atendimento online funciona do mesmo jeito?
-          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-          </svg>
-        </div>
-        <div class="faq-answer">
-          Sim. O atendimento online tem eficácia comprovada e segue os mesmos princípios do presencial. Utilizamos plataformas seguras e criptografadas. Para brasileiros no exterior, é a modalidade padrão — e funciona muito bem, especialmente para quem sente falta de ser atendido em português.
-        </div>
-      </div>
-
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          Você atende pelo plano de saúde?
-          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-          </svg>
-        </div>
-        <div class="faq-answer">
-          No momento, trabalho apenas com pagamento particular. Aceito PIX e transferência. Os valores são discutidos diretamente no primeiro contato — trabalho com uma política de escuta para viabilizar o processo sempre que possível.
-        </div>
-      </div>
-
-      <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-question">
-          Como faço para marcar uma sessão?
-          <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-          </svg>
-        </div>
-        <div class="faq-answer">
-          É simples: você me chama pelo WhatsApp e combinamos juntos o melhor dia e horário. Respondo a todas as mensagens pessoalmente, geralmente no mesmo dia.
-        </div>
+        <p>Psicólogo registrado no Conselho Regional de Psicologia de São Paulo, CRP 06/237122.</p>
+        <p>Graduado em Psicologia pela Faculdade Anhanguera de Pindamonhangaba e pós-graduando em Psicologia Analítica.</p>
+        <p>Atendo online e também presencialmente em Pindamonhangaba, SP.</p>
       </div>
     </div>
   </section>
 
   <!-- CONTATO -->
   <section id="contato" class="section">
-    <div class="contato-grid">
-      <div class="contato-info">
-        <p class="section-label">Contato & Agendamento</p>
-        <h2 class="section-title">Vamos conversar?</h2>
-        <div class="divider"></div>
-        <p>
-          O primeiro passo é o mais importante. Entre em contato para agendar uma sessão de acolhimento — sem compromisso — onde podemos nos conhecer e ver se faz sentido trabalharmos juntos.
-        </p>
-
-        <div class="contato-links">
-          <a href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20Marco.%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" class="contato-link">
-            <span class="contato-link-icon">
-              <svg fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-              </svg>
-            </span>
-            WhatsApp — fale diretamente comigo
-          </a>
-
-          <a href="https://instagram.com/marcoaurelio.psico" target="_blank" class="contato-link">
-            <span class="contato-link-icon">
-              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-              </svg>
-            </span>
-            @marcoaurelio.psico · Instagram
-          </a>
-
-          <a href="mailto:souza.axis.psicologia@gmail.com" class="contato-link">
-            <span class="contato-link-icon">
-              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-              </svg>
-            </span>
-            souza.axis.psicologia@gmail.com
-          </a>
-
-          <div class="contato-link" style="cursor: default; color: var(--txt-lt)">
-            <span class="contato-link-icon">
-              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-            </span>
-            Pindamonhangaba, SP · Brasil
-          </div>
-        </div>
-      </div>
-
-      <!-- AGENDA EMBED -->
-      <div class="agenda-embed">
-        <h3 class="agenda-embed-title">Agende sua consulta</h3>
-        <p class="agenda-embed-sub">Vamos combinar juntos o melhor dia e horário, e alinhar os detalhes da primeira sessão.</p>
-        <div class="agenda-whatsapp-cta">
-          <svg viewBox="0 0 24 24" fill="currentColor" class="wa-cta-icon">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
-          <p class="wa-cta-text">No momento, os agendamentos são feitos diretamente pelo WhatsApp, para que possamos conversar sobre o melhor horário e os próximos passos.</p>
-          <a href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20Marco.%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" class="btn-primary" style="display:inline-block;">Agendar pelo WhatsApp</a>
-        </div>
-      </div>
+    <div class="wrap">
+      <p class="section-label">Contato</p>
+      <h2 class="section-title">Se quiser conversar,<br>mande uma mensagem.</h2>
+      <div class="divider"></div>
+      <p class="sub">Conte brevemente o que você procura. Respondo pessoalmente e combinamos os próximos passos.</p>
+      <a class="btn-primary wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia%20online." target="_blank" rel="noopener">Conversar pelo WhatsApp</a>
+      <p class="nota">As mensagens são respondidas por mim, pessoalmente.</p>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <a class="footer-logo" href="#hero" style="display:flex;align-items:center;gap:0.85rem;text-decoration:none;">
-      <img src="logo.png" alt="Logo" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:1px solid rgba(201,168,76,0.4);" />
-      <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:1.1rem;color:var(--creme);">Marco Aurélio · Psicólogo</span>
-    </a>
-    <p class="footer-copy">© 2026 · Marco Aurélio Souza · Psicólogo · CRP 06/237122 · Pindamonhangaba, SP · <a href="/privacidade.html" style="color:inherit;text-decoration:underline;">Privacidade e cookies</a></p>
-    <div class="footer-insta"><a href="https://instagram.com/marcoaurelio.psico" target="_blank">@marcoaurelio.psico</a></div>
+    <div class="linha">
+      <span>Marco Aurélio de Oliveira de Souza · Psicólogo · CRP 06/237122</span>
+      <span><a href="mailto:souza.axis.psicologia@gmail.com">souza.axis.psicologia@gmail.com</a> · <a href="/">Conheça o site</a> · <a href="/privacidade.html">Privacidade e cookies</a></span>
+    </div>
+    <p class="emergencia">Este canal não atende emergências. Em situação de crise, ligue para o CVV (188) ou o SAMU (192).</p>
   </footer>
 
   <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20Marco.%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" class="wa-float" aria-label="Contato via WhatsApp">
-    <svg fill="currentColor" viewBox="0 0 24 24">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
+  <a class="wa-float wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia%20online." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
   <script>
-    function toggleMobile() {
-      const btn = document.getElementById('hamburger');
-      const menu = document.getElementById('mobileMenu');
-      btn.classList.toggle('open');
-      menu.classList.toggle('open');
-    }
-    function closeMobile() {
-      document.getElementById('hamburger').classList.remove('open');
-      document.getElementById('mobileMenu').classList.remove('open');
-    }
-
-    function toggleFaq(el) {
-      const isOpen = el.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-      if (!isOpen) el.classList.add('open');
-    }
-
-    // Nav hide on scroll down, show on scroll up
-    let lastY = 0;
-    const nav = document.querySelector('nav');
-    window.addEventListener('scroll', () => {
-      const y = window.scrollY;
-      if (y > lastY && y > 100) {
-        nav.style.transform = 'translateY(-100%)';
-        nav.style.transition = 'transform 0.3s';
-      } else {
-        nav.style.transform = '';
-      }
-      lastY = y;
-    }, { passive: true });
+    /* Conversão do Google Ads: dispara no clique de qualquer botão do WhatsApp.
+       Ação de conversão "Clique WhatsApp". */
+    document.querySelectorAll('.wa-link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        gtag('event', 'conversion', { send_to: 'AW-18496434067/Qu2BCIygr5IdEJPf5PNE' });
+      });
+    });
   </script>
 </body>
 </html>
