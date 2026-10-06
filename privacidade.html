@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade e Cookies | Marco Aurélio Souza – Psicólogo</title>
+  <meta name="description" content="Como o site marcoaureliopsicologo.com.br trata dados pessoais e cookies, de acordo com a LGPD." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://marcoaureliopsicologo.com.br/privacidade.html" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <!-- Consentimento de cookies (permite mudar a escolha por esta página) -->
+  <script src="/cookies.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --verde:   #1B3A2D;
+      --teal:    #1B3A4B;
+      --ouro:    #C9A84C;
+      --ouro-lt: #d9bc7a;
+      --creme:   #F5F2EC;
+      --branco:  #FDFBF7;
+      --txt:     #2a2a2a;
+      --txt-lt:  #5a5a5a;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; font-weight: 300; background: var(--branco); color: var(--txt); }
+    a { color: var(--teal); }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--ouro); outline-offset: 3px; }
+
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 2.5rem;
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+    }
+    .nav-logo img { height: 44px; width: auto; display: block; }
+    .nav-voltar {
+      font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--txt-lt); text-decoration: none;
+    }
+    .nav-voltar:hover { color: var(--ouro); }
+
+    header { background: var(--verde); color: var(--creme); padding: 4rem 5vw 3.5rem; }
+    header .wrap { max-width: 760px; margin: 0 auto; }
+    .label {
+      font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--ouro); margin-bottom: 0.8rem;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
+      font-size: clamp(2.2rem, 4.5vw, 3.2rem); line-height: 1.15; margin-bottom: 1rem;
+    }
+    header p { color: rgba(245,242,236,0.75); font-size: 0.95rem; line-height: 1.8; }
+
+    main { padding: 3.5rem 5vw 5rem; }
+    .conteudo { max-width: 760px; margin: 0 auto; }
+    .conteudo section { padding: 2rem 0; border-top: 1px solid rgba(27,58,45,0.1); }
+    .conteudo section:first-child { border-top: none; padding-top: 0; }
+    h2 {
+      font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400;
+      font-size: 1.6rem; color: var(--verde); margin-bottom: 1rem; line-height: 1.25;
+    }
+    h3 { font-weight: 500; font-size: 1rem; color: var(--verde); margin: 1.4rem 0 0.5rem; }
+    .conteudo p, .conteudo li { font-size: 1rem; line-height: 1.85; }
+    .conteudo p { margin-bottom: 1rem; }
+    .conteudo ul { padding-left: 1.3rem; margin-bottom: 1rem; }
+    .conteudo li { margin-bottom: 0.4rem; }
+    .conteudo strong { font-weight: 500; }
+
+    .tabela-wrap { overflow-x: auto; margin: 0.5rem 0 1rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 520px; }
+    th, td { text-align: left; padding: 0.7rem 0.8rem; border-bottom: 1px solid rgba(27,58,45,0.1); vertical-align: top; line-height: 1.6; }
+    th { font-weight: 500; color: var(--verde); background: var(--creme); }
+
+    .botao {
+      display: inline-block; margin-top: 0.5rem;
+      background: var(--ouro); color: var(--branco); border: none; cursor: pointer;
+      padding: 0.85rem 1.6rem; border-radius: 2px;
+      font-family: inherit; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .botao:hover { background: var(--ouro-lt); }
+
+    footer {
+      background: #111; padding: 2rem 5vw;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem; color: var(--creme); text-decoration: none; }
+    .footer-copy { font-size: 0.72rem; color: rgba(245,242,236,0.45); }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.2rem; }
+      .nav-logo img { height: 38px; }
+      header { padding: 3rem 1.5rem 2.5rem; }
+      main { padding: 2.5rem 1.5rem 4rem; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/"><img src="/logo.png" alt="Marco Aurélio Psicólogo" /></a>
+    <a class="nav-voltar" href="/">Voltar ao site</a>
+  </nav>
+
+  <header>
+    <div class="wrap">
+      <p class="label">LGPD · Lei nº 13.709/2018</p>
+      <h1>Política de Privacidade e Cookies</h1>
+      <p>Como este site trata os seus dados pessoais e quais cookies ele usa. Última atualização: 6 de outubro de 2026.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="conteudo">
+
+      <section>
+        <h2>Quem é o responsável pelos dados</h2>
+        <p>O responsável (controlador) pelo tratamento dos dados deste site é <strong>Marco Aurélio de Oliveira de Souza</strong>, psicólogo, CRP 06/237122, com atendimento em Pindamonhangaba, SP, e online.</p>
+        <p>Para qualquer assunto sobre seus dados, escreva para <a href="mailto:souza.axis.psicologia@gmail.com">souza.axis.psicologia@gmail.com</a>.</p>
+      </section>
+
+      <section>
+        <h2>Quais dados são coletados</h2>
+
+        <h3>Ao navegar pelo site</h3>
+        <p>O site não tem formulários nem cadastro. Se você <strong>aceitar os cookies</strong>, ferramentas do Google registram informações sobre a visita, como:</p>
+        <ul>
+          <li>páginas visitadas, tempo de permanência e cliques no botão do WhatsApp;</li>
+          <li>tipo de dispositivo, navegador e cidade aproximada;</li>
+          <li>como você chegou ao site (por exemplo, por uma busca ou por um anúncio).</li>
+        </ul>
+        <p>Essas informações são usadas apenas de forma estatística, para entender quantas pessoas visitam o site e se os anúncios estão funcionando. Elas não identificam você pelo nome.</p>
+        <p>Se você <strong>recusar</strong>, esses cookies não são gravados. O Google recebe apenas sinais básicos e sem identificadores, que não permitem reconhecer você em outras visitas.</p>
+
+        <h3>Ao entrar em contato</h3>
+        <p>Quando você clica no botão do WhatsApp ou envia um e-mail, recebo as informações que você escolher compartilhar, como seu nome, número de telefone e o motivo do contato. Essas mensagens são lidas apenas por mim e tratadas com o <strong>sigilo profissional</strong> previsto no Código de Ética Profissional do Psicólogo.</p>
+        <p>O WhatsApp é um serviço da Meta e segue a política de privacidade dela. Se preferir, você pode fazer o primeiro contato por e-mail.</p>
+      </section>
+
+      <section>
+        <h2>Cookies usados</h2>
+        <p>Cookies são pequenos arquivos que o site grava no seu navegador. Este site usa apenas os listados abaixo, e somente depois que você clica em "Aceitar".</p>
+        <div class="tabela-wrap">
+          <table>
+            <thead>
+              <tr><th>Ferramenta</th><th>Para que serve</th><th>Duração</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Google Analytics<br><small>(_ga, _ga_*)</small></td>
+                <td>Contar visitas e entender como o site é usado.</td>
+                <td>Até 2 anos</td>
+              </tr>
+              <tr>
+                <td>Google Ads<br><small>(_gcl_au e similares)</small></td>
+                <td>Saber se uma visita veio de um anúncio e se a pessoa clicou para entrar em contato.</td>
+                <td>Até 90 dias</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Não uso remarketing</strong> nem anúncios personalizados. Quem visita este site não passa a ver anúncios meus em outros sites ou aplicativos por causa da visita.</p>
+        <p>A sua escolha (aceitar ou recusar) fica guardada no seu próprio navegador por 12 meses, para o aviso não aparecer a cada visita.</p>
+        <button type="button" class="botao" onclick="window.abrirPreferenciasCookies && window.abrirPreferenciasCookies()">Alterar preferências de cookies</button>
+      </section>
+
+      <section>
+        <h2>Bases legais</h2>
+        <ul>
+          <li><strong>Cookies de estatística e anúncios:</strong> o seu consentimento (art. 7º, I, da LGPD), que pode ser retirado a qualquer momento pelo botão acima.</li>
+          <li><strong>Contato para agendamento:</strong> procedimentos preliminares ao atendimento, feitos a seu pedido (art. 7º, V).</li>
+          <li><strong>Informações de saúde que você compartilhar:</strong> tutela da saúde, em procedimento realizado por profissional de saúde (art. 11, II, "f").</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Com quem os dados são compartilhados</h2>
+        <p>Os dados não são vendidos nem cedidos para fins comerciais. Eles passam apenas pelos serviços necessários para o site funcionar:</p>
+        <ul>
+          <li><strong>Google</strong> (Analytics e Ads), para as estatísticas descritas acima;</li>
+          <li><strong>GitHub</strong>, empresa que hospeda o site e registra dados técnicos de acesso, como o endereço IP, por segurança;</li>
+          <li><strong>Meta</strong> (WhatsApp), quando você escolhe conversar por lá.</li>
+        </ul>
+        <p>Esses serviços podem armazenar dados em servidores fora do Brasil. Nesse caso, a transferência ocorre com base nas garantias contratuais dessas empresas, nos termos do art. 33 da LGPD.</p>
+      </section>
+
+      <section>
+        <h2>Por quanto tempo os dados são guardados</h2>
+        <ul>
+          <li><strong>Dados de navegação:</strong> pelo prazo dos cookies indicado na tabela e pelas configurações de retenção do Google Analytics.</li>
+          <li><strong>Mensagens de contato</strong> que não resultam em atendimento: apagadas quando deixam de ser necessárias.</li>
+          <li><strong>Registros de atendimento psicológico:</strong> guardados pelo prazo mínimo exigido pelas normas do Conselho Federal de Psicologia.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Seus direitos</h2>
+        <p>Pela LGPD (art. 18), você pode, a qualquer momento:</p>
+        <ul>
+          <li>confirmar se tenho dados seus e ter acesso a eles;</li>
+          <li>corrigir dados incompletos ou desatualizados;</li>
+          <li>pedir a exclusão de dados tratados com base no seu consentimento;</li>
+          <li>retirar o consentimento para os cookies;</li>
+          <li>saber com quem os dados foram compartilhados.</li>
+        </ul>
+        <p>Para exercer qualquer um desses direitos, escreva para <a href="mailto:souza.axis.psicologia@gmail.com">souza.axis.psicologia@gmail.com</a>. Se considerar que seus direitos não foram respeitados, você também pode procurar a Autoridade Nacional de Proteção de Dados (ANPD).</p>
+      </section>
+
+      <section>
+        <h2>Alterações nesta política</h2>
+        <p>Esta política pode ser atualizada se o site mudar ou se novas ferramentas forem usadas. A data da última atualização aparece no topo da página.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <a class="footer-logo" href="/">Marco Aurélio · Psicólogo</a>
+    <p class="footer-copy">© 2026 · Marco Aurélio Souza · Psicólogo · CRP 06/237122 · Pindamonhangaba, SP</p>
+  </footer>
+
+</body>
+</html>

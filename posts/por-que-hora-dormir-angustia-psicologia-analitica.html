@@ -10,12 +10,14 @@
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
 
   <!-- Google tag (gtag.js) -->
+  <!-- Consentimento de cookies: precisa vir antes da tag do Google -->
+  <script src="/cookies.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2LBNKLDVH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-Y2LBNKLDVH');
+    gtag('config', 'G-Y2LBNKLDVH', { allow_google_signals: false, allow_ad_personalization_signals: false });
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -412,7 +414,7 @@
 
   <footer>
     <a class="footer-logo" href="../index.html">Marco Aurélio · Psicólogo</a>
-    <p class="footer-copy">© 2026 · Marco Aurélio Souza · Psicólogo · CRP 06/237122 · Pindamonhangaba, SP</p>
+    <p class="footer-copy">© 2026 · Marco Aurélio Souza · Psicólogo · CRP 06/237122 · Pindamonhangaba, SP · <a href="/privacidade.html" style="color:inherit;text-decoration:underline;">Privacidade e cookies</a></p>
   </footer>
 
   <a href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20Marco.%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" class="wa-float" aria-label="WhatsApp">

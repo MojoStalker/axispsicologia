@@ -9,13 +9,15 @@
   <link rel="canonical" href="https://marcoaureliopsicologo.com.br/homens/" />
 
   <!-- Google tag (gtag.js) — a mesma do site -->
+  <!-- Consentimento de cookies: precisa vir antes da tag do Google -->
+  <script src="/cookies.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2LBNKLDVH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-Y2LBNKLDVH');
-    gtag('config', 'AW-18496434067'); // Google Ads
+    gtag('config', 'G-Y2LBNKLDVH', { allow_google_signals: false, allow_ad_personalization_signals: false });
+    gtag('config', 'AW-18496434067', { allow_ad_personalization_signals: false }); // Google Ads
   </script>
 
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
@@ -445,7 +447,7 @@
   <footer>
     <div class="linha">
       <span>Marco Aurélio de Oliveira de Souza · Psicólogo · CRP 06/237122</span>
-      <span><a href="mailto:souza.axis.psicologia@gmail.com">souza.axis.psicologia@gmail.com</a> · <a href="/">Conheça o site</a></span>
+      <span><a href="mailto:souza.axis.psicologia@gmail.com">souza.axis.psicologia@gmail.com</a> · <a href="/">Conheça o site</a> · <a href="/privacidade.html">Privacidade e cookies</a></span>
     </div>
     <p class="emergencia">Este canal não atende emergências. Em situação de crise, ligue para o CVV (188) ou o SAMU (192).</p>
   </footer>
