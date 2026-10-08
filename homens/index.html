@@ -4,11 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Terapia individual online para homens | Marco Aurélio Souza – Psicólogo</title>
-  <meta name="description" content="Terapia individual online para homens que atravessam crise no relacionamento, separação ou divórcio. Psicologia Analítica (Jung). Marco Aurélio Souza, CRP 06/237122." />
+  <meta name="description" content="Terapia individual online para homens em crise no relacionamento, separação ou divórcio. Atendimento com psicólogo homem, por videochamada. Marco Aurélio Souza, CRP 06/237122." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://marcoaureliopsicologo.com.br/homens/" />
 
-  <!-- Google tag (gtag.js) — a mesma do site -->
   <!-- Consentimento de cookies: precisa vir antes da tag do Google -->
   <script src="/cookies.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2LBNKLDVH"></script>
@@ -51,9 +50,9 @@
       overflow-x: hidden;
     }
 
-    a:focus-visible { outline: 2px solid var(--ouro); outline-offset: 3px; }
+    a:focus-visible, summary:focus-visible { outline: 2px solid var(--ouro); outline-offset: 3px; }
 
-    /* ── NAV (só o logo, sem menu: a página tem uma saída só, o WhatsApp) ── */
+    /* ── NAV (só logo e WhatsApp: a página tem uma saída só) ── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -62,12 +61,11 @@
       align-items: center;
       justify-content: space-between;
       padding: calc(1rem + env(safe-area-inset-top, 0px)) 2.5rem 1rem;
-      background: rgba(253,251,247,0.92);
+      background: rgba(253,251,247,0.94);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid rgba(201,168,76,0.15);
     }
     .nav-logo img { height: 44px; width: auto; display: block; }
-
     .nav-cta {
       background: var(--ouro);
       color: var(--branco);
@@ -84,17 +82,14 @@
 
     /* ── HERO ── */
     #hero {
-      min-height: 100svh;
       background: var(--verde);
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      align-items: center;
       position: relative;
       overflow: hidden;
+      padding: 8rem 5vw 5rem;
     }
     .hero-bg-ornament {
       position: absolute;
-      right: -10vw;
+      right: -12vw;
       top: 50%;
       transform: translateY(-50%);
       width: 55vw;
@@ -110,40 +105,53 @@
       border-radius: 50%;
       border: 1px solid rgba(201,168,76,0.09);
     }
-    .hero-text {
-      padding: 8rem 3rem 6rem 5vw;
+    .hero-grid {
       position: relative;
       z-index: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.35fr 0.85fr;
+      gap: 4rem;
+      align-items: center;
     }
     .hero-eyebrow {
       font-size: 0.72rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--ouro);
-      margin-bottom: 1.8rem;
-      line-height: 1.6;
+      margin-bottom: 1.6rem;
+      line-height: 1.7;
     }
     .hero-title {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
       font-weight: 300;
-      font-size: clamp(2.8rem, 5vw, 4.4rem);
-      line-height: 1.1;
+      font-size: clamp(2.6rem, 5vw, 4.2rem);
+      line-height: 1.08;
       color: var(--creme);
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.5rem;
     }
     .hero-sub {
-      font-size: 1rem;
+      font-size: 1.05rem;
       line-height: 1.8;
-      color: rgba(245,242,236,0.75);
-      max-width: 440px;
-      margin-bottom: 2.6rem;
+      color: rgba(245,242,236,0.8);
+      max-width: 520px;
+      margin-bottom: 1rem;
     }
+    .hero-detalhe {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: rgba(245,242,236,0.6);
+      max-width: 520px;
+      margin-bottom: 2.2rem;
+    }
+
     .btn-primary {
       display: inline-block;
       background: var(--ouro);
       color: var(--branco);
-      padding: 0.95rem 2rem;
+      padding: 1rem 2rem;
       border-radius: 2px;
       font-size: 0.8rem;
       font-weight: 500;
@@ -153,48 +161,50 @@
       transition: background 0.2s;
     }
     .btn-primary:hover { background: var(--ouro-lt); }
+    .cta-nota {
+      margin-top: 0.9rem;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: rgba(245,242,236,0.6);
+      max-width: 420px;
+    }
 
-    .hero-card {
+    .hero-foto {
       position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-      padding: 6rem 5vw 6rem 2rem;
+      width: 100%;
+      max-width: 360px;
+      justify-self: center;
     }
-    .hero-logo-img {
-      width: clamp(200px, 24vw, 320px);
+    .hero-foto img {
+      width: 100%;
       height: auto;
-      filter: drop-shadow(0 8px 32px rgba(201,168,76,0.25));
-    }
-    .crp-badge {
-      background: rgba(27,58,45,0.75);
-      border: 1px solid rgba(201,168,76,0.3);
-      border-radius: 4px;
-      padding: 1rem 1.4rem;
-      text-align: center;
-    }
-    .crp-badge .label {
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--ouro);
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: 50% 72%;
+      border-radius: 2px;
       display: block;
-      margin-bottom: 0.3rem;
+      border: 1px solid rgba(201,168,76,0.3);
     }
-    .crp-badge .value {
+    .hero-foto figcaption {
+      margin-top: 1rem;
+      text-align: center;
+      color: rgba(245,242,236,0.75);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .hero-foto figcaption strong {
+      display: block;
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.05rem;
-      letter-spacing: 0.08em;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.25rem;
       color: var(--creme);
-      font-variant-numeric: lining-nums;
     }
 
     /* ── SEÇÕES ── */
     .section { padding: 6rem 5vw; }
     .wrap { max-width: 1100px; margin: 0 auto; }
-    .wrap-texto p { max-width: 680px; }
+    .texto { max-width: 680px; }
 
     .section-label {
       font-size: 0.68rem;
@@ -213,47 +223,105 @@
       margin-bottom: 1.5rem;
     }
     .divider { width: 48px; height: 1px; background: var(--ouro); margin-bottom: 2rem; }
-
-    .texto p {
-      font-size: 1rem;
-      line-height: 1.85;
-      margin-bottom: 1.4rem;
-    }
+    .texto p { font-size: 1rem; line-height: 1.85; margin-bottom: 1.3rem; }
 
     /* Para quem é */
     #para-quem { background: var(--creme); }
+    .lista-situacoes { list-style: none; margin: 0.5rem 0 1.8rem; }
+    .lista-situacoes li {
+      padding: 0.85rem 0 0.85rem 1.6rem;
+      border-top: 1px solid rgba(27,58,45,0.1);
+      position: relative;
+      line-height: 1.6;
+    }
+    .lista-situacoes li:last-child { border-bottom: 1px solid rgba(27,58,45,0.1); }
+    .lista-situacoes li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 1.45rem;
+      width: 8px; height: 1px;
+      background: var(--ouro);
+    }
 
-    /* Como trabalho (verde, como a seção Abordagem do site) */
-    #como-trabalho { background: var(--verde); color: var(--creme); }
-    #como-trabalho .section-title { color: var(--creme); }
-    #como-trabalho .texto p { color: rgba(245,242,236,0.78); }
-
-    /* Como funciona (grade como "O que ofereço") */
-    #como-funciona { background: var(--branco); }
-    .funciona-grid {
+    /* O que a terapia oferece (verde) */
+    #proposta { background: var(--verde); color: var(--creme); }
+    #proposta .section-title { color: var(--creme); }
+    .proposta-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5px;
-      background: rgba(27,58,45,0.08);
-      border: 1px solid rgba(27,58,45,0.08);
+      gap: 1px;
+      background: rgba(245,242,236,0.12);
+      border: 1px solid rgba(245,242,236,0.12);
+      margin-bottom: 2.5rem;
     }
-    .funciona-card { background: var(--branco); padding: 2.2rem; }
-    .funciona-card h3 {
+    .proposta-item { background: var(--verde); padding: 2.2rem; }
+    .proposta-item h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.35rem;
+      color: var(--creme);
+      margin-bottom: 0.7rem;
+    }
+    .proposta-item p { font-size: 0.92rem; line-height: 1.75; color: rgba(245,242,236,0.75); }
+    .proposta-rodape { max-width: 680px; }
+    .proposta-rodape p { font-size: 0.95rem; line-height: 1.85; color: rgba(245,242,236,0.75); margin-bottom: 1rem; }
+
+    /* Como funciona (sequência real: numeração faz sentido) */
+    #como-funciona { background: var(--branco); }
+    .passos { list-style: none; counter-reset: passo; max-width: 760px; }
+    .passos li {
+      counter-increment: passo;
+      display: grid;
+      grid-template-columns: 3.2rem 1fr;
+      gap: 1.2rem;
+      padding: 1.6rem 0;
+      border-top: 1px solid rgba(27,58,45,0.1);
+    }
+    .passos li:last-child { border-bottom: 1px solid rgba(27,58,45,0.1); }
+    .passos li::before {
+      content: counter(passo);
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 2.4rem;
+      line-height: 1;
+      color: var(--ouro);
+    }
+    .passos h3 {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
       font-weight: 400;
       font-size: 1.35rem;
       color: var(--verde);
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.4rem;
     }
-    .funciona-card p { font-size: 0.9rem; line-height: 1.75; color: var(--txt-lt); }
+    .passos p { font-size: 0.95rem; line-height: 1.75; color: var(--txt-lt); }
+
+    /* Para quem procura ajuda para o parceiro */
+    #parceira { background: var(--creme); padding-top: 4rem; padding-bottom: 4rem; }
+    .caixa-parceira {
+      max-width: 760px;
+      border-left: 2px solid var(--ouro);
+      padding: 0.5rem 0 0.5rem 2rem;
+    }
+    .caixa-parceira h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.7rem;
+      color: var(--verde);
+      margin-bottom: 0.8rem;
+      line-height: 1.25;
+    }
+    .caixa-parceira p { font-size: 0.97rem; line-height: 1.8; margin-bottom: 0.8rem; }
+    .caixa-parceira a { color: var(--teal); }
 
     /* Sobre */
-    #sobre { background: var(--creme); }
+    #sobre { background: var(--branco); }
     .sobre-grid {
       display: grid;
-      grid-template-columns: 0.8fr 1.4fr;
-      gap: 5rem;
+      grid-template-columns: 0.7fr 1.4fr;
+      gap: 4.5rem;
       align-items: start;
     }
     .sobre-foto {
@@ -262,31 +330,62 @@
       background: linear-gradient(160deg, var(--verde) 0%, var(--teal) 100%);
       border-radius: 2px;
       overflow: hidden;
-      margin-bottom: 1.2rem;
     }
-    .sobre-foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 5%; display: block; }
-    .sobre-foto-caption {
-      font-size: 0.72rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--txt-lt);
-      text-align: center;
+    .sobre-foto img { width: 100%; height: 100% !important; object-fit: cover; object-position: 50% 75%; display: block; }
+
+    /* Perguntas frequentes */
+    #faq { background: var(--verde); color: var(--creme); }
+    #faq .section-title { color: var(--creme); }
+    .faq-lista { max-width: 800px; }
+    .faq-lista details { border-top: 1px solid rgba(245,242,236,0.14); }
+    .faq-lista details:last-child { border-bottom: 1px solid rgba(245,242,236,0.14); }
+    .faq-lista summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 1.4rem 2.5rem 1.4rem 0;
+      position: relative;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.25rem;
+      line-height: 1.35;
+      color: var(--creme);
     }
+    .faq-lista summary::-webkit-details-marker { display: none; }
+    .faq-lista summary::after {
+      content: '+';
+      position: absolute;
+      right: 0.3rem; top: 1.2rem;
+      font-family: 'DM Sans', sans-serif;
+      font-style: normal;
+      font-size: 1.4rem;
+      color: var(--ouro);
+      transition: transform 0.2s;
+    }
+    .faq-lista details[open] summary::after { transform: rotate(45deg); }
+    .faq-lista .resposta {
+      padding: 0 0 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: rgba(245,242,236,0.78);
+      max-width: 700px;
+    }
+    .faq-lista .resposta p + p { margin-top: 0.8rem; }
 
     /* Contato final */
-    #contato { background: var(--verde); color: var(--creme); text-align: center; }
-    #contato .section-title { color: var(--creme); }
+    #contato { background: var(--creme); text-align: center; }
     #contato .divider { margin: 0 auto 2rem; }
     #contato p.sub {
-      color: rgba(245,242,236,0.75);
       font-size: 1rem;
       line-height: 1.8;
-      max-width: 520px;
-      margin: 0 auto 2.4rem;
+      color: var(--txt-lt);
+      max-width: 540px;
+      margin: 0 auto 2.2rem;
     }
-    #contato .nota { margin-top: 1.4rem; font-size: 0.85rem; color: rgba(245,242,236,0.55); }
+    #contato .cta-nota { margin: 1rem auto 0; color: var(--txt-lt); }
+    #contato .alternativa { margin-top: 1.6rem; font-size: 0.9rem; color: var(--txt-lt); }
+    #contato .alternativa a { color: var(--teal); }
 
-    /* ── FOOTER (como o do site) ── */
+    /* ── FOOTER ── */
     footer {
       background: #111;
       padding: 2.5rem 5vw calc(2.5rem + env(safe-area-inset-bottom, 0px));
@@ -298,7 +397,7 @@
     footer a { color: var(--ouro); text-decoration: none; }
     footer .emergencia { margin-top: 1.2rem; color: rgba(245,242,236,0.45); font-size: 0.75rem; }
 
-    /* ── WHATSAPP FLOAT (igual ao site) ── */
+    /* ── WHATSAPP FLOAT ── */
     .wa-float {
       position: fixed;
       bottom: calc(1.8rem + env(safe-area-inset-bottom, 0px));
@@ -318,17 +417,21 @@
     .wa-float svg { width: 28px; height: 28px; color: #fff; }
 
     /* ── RESPONSIVO ── */
-    @media (max-width: 768px) {
+    @media (max-width: 860px) {
       nav { padding: calc(0.8rem + env(safe-area-inset-top, 0px)) 1.2rem 0.8rem; }
       .nav-logo img { height: 38px; }
-      #hero { grid-template-columns: 1fr; }
-      .hero-text { padding: 7rem 1.5rem 2.5rem; }
-      .hero-card { padding: 0 1.5rem 3.5rem; }
-      .hero-logo-img { width: 160px; }
-      .hero-bg-ornament { width: 120vw; height: 120vw; right: -40vw; }
+      #hero { padding: 6.5rem 1.5rem 3.5rem; }
+      .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero-foto { order: -1; max-width: 300px; justify-self: start; display: grid; grid-template-columns: 72px 1fr; gap: 0.9rem; align-items: center; }
+      .hero-foto img { width: 72px; height: 72px; aspect-ratio: 1; border-radius: 50%; object-position: 50% 62%; }
+      .hero-grid { gap: 1.6rem; }
+      .hero-foto figcaption { margin-top: 0; text-align: left; }
+      .hero-bg-ornament { width: 120vw; height: 120vw; right: -50vw; }
       .section { padding: 4rem 1.5rem; }
+      #parceira { padding: 3rem 1.5rem; }
       .sobre-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .sobre-aside { max-width: 260px; margin: 0 auto; width: 100%; }
+      .sobre-foto { max-width: 240px; }
+      .caixa-parceira { padding-left: 1.3rem; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -340,127 +443,223 @@
 
   <nav>
     <span class="nav-logo"><img src="/logo.png" alt="Marco Aurélio Psicólogo" /></span>
-    <a class="nav-cta wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia%20online." target="_blank" rel="noopener">WhatsApp</a>
+    <a class="nav-cta wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20Marco.%20Vim%20pelo%20site%20e%20queria%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20terapia%20online." target="_blank" rel="noopener">WhatsApp</a>
   </nav>
 
   <!-- HERO -->
-  <section id="hero">
+  <header id="hero">
     <div class="hero-bg-ornament"></div>
-
-    <div class="hero-text">
-      <p class="hero-eyebrow">Marco Aurélio Souza · Psicólogo<br>Atendimento online</p>
-      <h1 class="hero-title">Terapia individual online para homens</h1>
-      <p class="hero-sub">
-        Um espaço sigiloso para falar sobre o que está acontecendo no seu relacionamento: uma crise no casamento, uma separação, um divórcio.
-      </p>
-      <a class="btn-primary wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia%20online." target="_blank" rel="noopener">Conversar pelo WhatsApp</a>
-    </div>
-
-    <div class="hero-card">
-      <img src="/logo.png" alt="" class="hero-logo-img" />
-      <div class="crp-badge">
-        <span class="label">CRP</span>
-        <span class="value">06/237122</span>
+    <div class="hero-grid">
+      <div>
+        <p class="hero-eyebrow">Atendimento online · Brasil e exterior</p>
+        <h1 class="hero-title">Terapia individual online para homens</h1>
+        <p class="hero-sub">Para quem está passando por uma crise no casamento, uma separação ou um divórcio e precisa de um lugar para organizar a cabeça antes de decidir os próximos passos.</p>
+        <p class="hero-detalhe">Atendimento com psicólogo homem, por videochamada, com sigilo profissional.</p>
+        <a class="btn-primary wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20Marco.%20Vim%20pelo%20site%20e%20queria%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20terapia%20online." target="_blank" rel="noopener">Tirar uma dúvida pelo WhatsApp</a>
+        <p class="cta-nota">Pode ser só uma pergunta. Você não precisa contar nada que não queira.</p>
       </div>
+      <figure class="hero-foto">
+        <img src="/foto.jpg" alt="Marco Aurélio de Oliveira de Souza, psicólogo" width="596" height="900" />
+        <figcaption><strong>Marco Aurélio Souza</strong>Psicólogo · CRP 06/237122</figcaption>
+      </figure>
     </div>
-  </section>
+  </header>
 
-  <!-- PARA QUEM É -->
-  <section id="para-quem" class="section">
-    <div class="wrap wrap-texto texto">
-      <p class="section-label">Para quem é</p>
-      <h2 class="section-title">Quando a vida a dois<br>deixa de fazer sentido.</h2>
-      <div class="divider"></div>
-      <p>Para homens que estão atravessando um momento difícil no relacionamento e não encontram onde falar sobre isso. Às vezes é uma crise que se arrasta há tempo. Às vezes é uma separação recente, ou um divórcio que mudou a casa, a rotina e a convivência com os filhos.</p>
-      <p>Muitos homens cresceram ouvindo que deveriam dar conta de tudo sozinhos. Na terapia, isso não é exigido de você.</p>
-    </div>
-  </section>
+  <main>
 
-  <!-- COMO TRABALHO -->
-  <section id="como-trabalho" class="section">
-    <div class="wrap wrap-texto texto">
-      <p class="section-label">A abordagem</p>
-      <h2 class="section-title">Como eu trabalho</h2>
-      <div class="divider"></div>
-      <p>Atendo a partir da Psicologia Analítica, de Carl Gustav Jung. Na prática, as sessões não seguem um roteiro de tarefas nem trazem conselhos prontos. O trabalho parte do que você traz: o que aconteceu, o que sente, as situações que se repetem, os sonhos.</p>
-      <p>A proposta é compreender o que esse momento diz sobre você e sobre a sua história, no seu tempo.</p>
-    </div>
-  </section>
-
-  <!-- COMO FUNCIONA -->
-  <section id="como-funciona" class="section">
-    <div class="wrap">
-      <p class="section-label">Atendimento</p>
-      <h2 class="section-title">Como funciona</h2>
-      <div class="divider"></div>
-      <div class="funciona-grid">
-        <div class="funciona-card">
-          <h3>Online, por videochamada</h3>
-          <p>De qualquer lugar do Brasil, e também para brasileiros que vivem no exterior e querem ser atendidos em português.</p>
-        </div>
-        <div class="funciona-card">
-          <h3>Sigilo</h3>
-          <p>O que é dito nas sessões é protegido pelo Código de Ética Profissional do Psicólogo.</p>
-        </div>
-        <div class="funciona-card">
-          <h3>Horários</h3>
-          <p>Combinados no primeiro contato, de acordo com a sua rotina e a disponibilidade da agenda.</p>
-        </div>
-        <div class="funciona-card">
-          <h3>O primeiro passo</h3>
-          <p>Você manda uma mensagem pelo WhatsApp, conversamos sobre o que você procura e, se fizer sentido para você, combinamos o primeiro horário.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOBRE -->
-  <section id="sobre" class="section">
-    <div class="wrap sobre-grid">
-      <div class="sobre-aside">
-        <div class="sobre-foto"><img src="/foto.jpg" alt="Marco Aurélio Souza, psicólogo" /></div>
-        <p class="sobre-foto-caption">Marco Aurélio · Psicólogo</p>
-      </div>
-      <div class="texto">
-        <p class="section-label">Quem atende</p>
-        <h2 class="section-title">Marco Aurélio de Oliveira de Souza</h2>
+    <!-- PARA QUEM É -->
+    <section id="para-quem" class="section">
+      <div class="wrap texto">
+        <p class="section-label">Para quem é</p>
+        <h2 class="section-title">Talvez você esteja nesse ponto</h2>
         <div class="divider"></div>
-        <p>Psicólogo registrado no Conselho Regional de Psicologia de São Paulo, CRP 06/237122.</p>
-        <p>Graduado em Psicologia pela Faculdade Anhanguera de Pindamonhangaba e pós-graduando em Psicologia Analítica.</p>
-        <p>Atendo online e também presencialmente em Pindamonhangaba, SP.</p>
+        <ul class="lista-situacoes">
+          <li>As brigas viraram rotina e as conversas, raras.</li>
+          <li>Você pensa em se separar, mas não tem certeza.</li>
+          <li>A separação já aconteceu e você está tentando se reorganizar.</li>
+          <li>O divórcio mexeu com a casa, o dinheiro e a convivência com os filhos.</li>
+          <li>Você não tem com quem falar sobre isso de verdade.</li>
+        </ul>
+        <p>Muitos homens cresceram ouvindo que deveriam dar conta de tudo sozinhos. Aqui isso não é exigido de você.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTATO -->
-  <section id="contato" class="section">
-    <div class="wrap">
-      <p class="section-label">Contato</p>
-      <h2 class="section-title">Se quiser conversar,<br>mande uma mensagem.</h2>
-      <div class="divider"></div>
-      <p class="sub">Conte brevemente o que você procura. Respondo pessoalmente e combinamos os próximos passos.</p>
-      <a class="btn-primary wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia%20online." target="_blank" rel="noopener">Conversar pelo WhatsApp</a>
-      <p class="nota">As mensagens são respondidas por mim, pessoalmente.</p>
-    </div>
-  </section>
+    <!-- O QUE A TERAPIA OFERECE -->
+    <section id="proposta" class="section">
+      <div class="wrap">
+        <p class="section-label">A proposta</p>
+        <h2 class="section-title">Um lugar para colocar as coisas em ordem</h2>
+        <div class="divider"></div>
+        <div class="proposta-grid">
+          <div class="proposta-item">
+            <h3>Entender o que está acontecendo</h3>
+            <p>Separar os fatos, o que você sente e o que ainda está confuso, sem pressa e sem julgamento.</p>
+          </div>
+          <div class="proposta-item">
+            <h3>Perceber o que se repete</h3>
+            <p>Reconhecer padrões na relação e na sua própria história que talvez estejam pesando nas escolhas de hoje.</p>
+          </div>
+          <div class="proposta-item">
+            <h3>Decidir com mais clareza</h3>
+            <p>Pensar os próximos passos com calma, seja continuar, recomeçar ou encerrar.</p>
+          </div>
+        </div>
+        <div class="proposta-rodape">
+          <p>Não dou conselhos prontos nem passo tarefas para casa. As decisões continuam sendo suas; o trabalho é ajudar você a enxergá-las melhor.</p>
+          <p>A abordagem é a Psicologia Analítica, de Carl Gustav Jung, que olha para o que está por trás das situações que se repetem na vida de cada pessoa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="section">
+      <div class="wrap">
+        <p class="section-label">Como funciona</p>
+        <h2 class="section-title">Do primeiro contato às sessões</h2>
+        <div class="divider"></div>
+        <ol class="passos">
+          <li>
+            <div>
+              <h3>Você manda uma mensagem</h3>
+              <p>Pelo WhatsApp ou por e-mail. Pode ser só para tirar dúvidas. Respondo pessoalmente, normalmente no mesmo dia.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Combinamos o primeiro horário</h3>
+              <p>A sessão é por videochamada. Basta um celular ou computador e um lugar onde você possa falar à vontade.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Na primeira sessão, a gente se conhece</h3>
+              <p>Você conta o que te trouxe, no seu ritmo, e eu explico como trabalho. Depois disso, você decide se quer continuar.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Sessões semanais de 50 minutos</h3>
+              <p>O processo segue no seu tempo, e o rumo é conversado entre nós ao longo do caminho.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PARA QUEM PROCURA AJUDA PARA O PARCEIRO -->
+    <section id="parceira" class="section">
+      <div class="wrap">
+        <div class="caixa-parceira">
+          <h2>Está procurando ajuda para o seu marido ou companheiro?</h2>
+          <p>Você pode compartilhar esta página com ele. A decisão de começar a terapia precisa ser dele, mas, se quiser tirar alguma dúvida antes de conversar com ele, pode me escrever.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="wrap sobre-grid">
+        <div class="sobre-foto"><img src="/foto.jpg" alt="Marco Aurélio Souza, psicólogo" loading="lazy" /></div>
+        <div class="texto">
+          <p class="section-label">Quem atende</p>
+          <h2 class="section-title">Marco Aurélio de Oliveira de Souza</h2>
+          <div class="divider"></div>
+          <p>Psicólogo registrado no Conselho Regional de Psicologia de São Paulo, CRP 06/237122.</p>
+          <p>Graduado em Psicologia pela Faculdade Anhanguera de Pindamonhangaba e pós-graduando em Psicologia Analítica.</p>
+          <p>Atendo online, para todo o Brasil e para brasileiros que vivem no exterior, e também presencialmente em Pindamonhangaba, SP.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERGUNTAS FREQUENTES -->
+    <section id="faq" class="section">
+      <div class="wrap">
+        <p class="section-label">Perguntas frequentes</p>
+        <h2 class="section-title">Antes de mandar a mensagem</h2>
+        <div class="divider"></div>
+        <div class="faq-lista">
+          <details>
+            <summary>Nunca fiz terapia. Como é a primeira sessão?</summary>
+            <div class="resposta">
+              <p>É uma conversa. Você conta o que está acontecendo, do jeito que conseguir, e eu explico como funciona o trabalho. Não existe resposta certa nem roteiro que você precise seguir. Ao final, você decide se quer continuar.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Preciso contar tudo logo de cara?</summary>
+            <div class="resposta">
+              <p>Não. Você fala o que quiser e quando quiser. Muita coisa só aparece com o tempo, e está tudo bem.</p>
+            </div>
+          </details>
+          <details>
+            <summary>É sigiloso? Minha esposa ou ex vai ficar sabendo?</summary>
+            <div class="resposta">
+              <p>O que é dito nas sessões é protegido pelo sigilo profissional previsto no Código de Ética do Psicólogo. Ninguém é informado de que você faz terapia, nem do que é conversado, salvo nas situações excepcionais previstas no próprio Código, como risco à vida.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Faz diferença ser atendido por um psicólogo homem?</summary>
+            <div class="resposta">
+              <p>Para alguns homens, sim: fica mais fácil começar a falar. Mas o que mais pesa é você se sentir à vontade na conversa, e isso você percebe já na primeira sessão.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Terapia online funciona?</summary>
+            <div class="resposta">
+              <p>A terapia por videochamada é reconhecida pelo Conselho Federal de Psicologia e segue as mesmas regras de sigilo do atendimento presencial. O importante é ter um lugar reservado durante a sessão.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Quanto custa?</summary>
+            <div class="resposta">
+              <p>O valor da sessão e as formas de pagamento são informados no primeiro contato, junto com os horários disponíveis.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Moro fora do Brasil. Posso ser atendido?</summary>
+            <div class="resposta">
+              <p>Sim. Atendo brasileiros em qualquer país, em português, e os horários são combinados considerando o seu fuso.</p>
+            </div>
+          </details>
+          <details>
+            <summary>E se eu estiver em uma situação de emergência?</summary>
+            <div class="resposta">
+              <p>Este canal não é adequado para emergências. Se você estiver em crise ou correndo risco, ligue para o CVV (188, 24 horas) ou para o SAMU (192).</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="wrap">
+        <p class="section-label">Contato</p>
+        <h2 class="section-title">Se quiser conversar, mande uma mensagem</h2>
+        <div class="divider"></div>
+        <p class="sub">Pode ser só uma dúvida. Respondo pessoalmente, normalmente no mesmo dia.</p>
+        <a class="btn-primary wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20Marco.%20Vim%20pelo%20site%20e%20queria%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20terapia%20online." target="_blank" rel="noopener">Tirar uma dúvida pelo WhatsApp</a>
+        <p class="alternativa">Prefere e-mail? <a class="email-link" href="mailto:souza.axis.psicologia@gmail.com?subject=D%C3%BAvida%20sobre%20a%20terapia%20online">souza.axis.psicologia@gmail.com</a></p>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <div class="linha">
       <span>Marco Aurélio de Oliveira de Souza · Psicólogo · CRP 06/237122</span>
-      <span><a href="mailto:souza.axis.psicologia@gmail.com">souza.axis.psicologia@gmail.com</a> · <a href="/">Conheça o site</a> · <a href="/privacidade.html">Privacidade e cookies</a></span>
+      <span><a href="/">Conheça o site</a> · <a href="/privacidade.html">Privacidade e cookies</a></span>
     </div>
     <p class="emergencia">Este canal não atende emergências. Em situação de crise, ligue para o CVV (188) ou o SAMU (192).</p>
   </footer>
 
   <!-- WHATSAPP FLOAT -->
-  <a class="wa-float wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20terapia%20online." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+  <a class="wa-float wa-link" href="https://wa.me/5512991726945?text=Ol%C3%A1%2C%20Marco.%20Vim%20pelo%20site%20e%20queria%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20terapia%20online." target="_blank" rel="noopener" aria-label="Tirar uma dúvida pelo WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
   <script>
-    /* Conversão do Google Ads: dispara no clique de qualquer botão do WhatsApp.
-       Ação de conversão "Clique WhatsApp". */
-    document.querySelectorAll('.wa-link').forEach(function (link) {
+    /* Conversão do Google Ads "Clique WhatsApp": dispara no clique de qualquer botão de WhatsApp ou no link de e-mail */
+    document.querySelectorAll('.wa-link, .email-link').forEach(function (link) {
       link.addEventListener('click', function () {
         gtag('event', 'conversion', { send_to: 'AW-18496434067/Qu2BCIygr5IdEJPf5PNE' });
       });
