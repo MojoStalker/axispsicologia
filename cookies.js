@@ -62,20 +62,22 @@
 
   // 2. Aviso na tela
   var CSS = '' +
-    '#aviso-cookies{position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:1000;' +
-    'max-width:640px;margin:0 auto;background:#1B3A2D;color:#F5F2EC;' +
-    'border:1px solid rgba(201,168,76,0.35);border-radius:4px;padding:1.25rem 1.4rem;' +
-    'box-shadow:0 8px 32px rgba(0,0,0,0.25);font-family:"DM Sans",system-ui,sans-serif;' +
-    'font-weight:300;font-size:0.9rem;line-height:1.6}' +
-    '#aviso-cookies p{margin:0 0 1rem}' +
+    '#aviso-cookies{position:fixed;left:0;right:0;bottom:0;z-index:1000;' +
+    'background:#1B3A2D;color:#F5F2EC;border-top:1px solid rgba(201,168,76,0.35);' +
+    'padding:0.75rem 1.25rem calc(0.75rem + env(safe-area-inset-bottom,0px));' +
+    'box-shadow:0 -4px 20px rgba(0,0,0,0.18);font-family:"DM Sans",system-ui,sans-serif;' +
+    'font-weight:300;font-size:0.82rem;line-height:1.5;display:flex;align-items:center;' +
+    'justify-content:center;gap:1rem;flex-wrap:wrap}' +
+    '#aviso-cookies p{margin:0;max-width:640px;flex:1 1 280px}' +
     '#aviso-cookies a{color:#C9A84C}' +
-    '#aviso-cookies .botoes{display:flex;gap:0.75rem;flex-wrap:wrap;justify-content:flex-end}' +
-    '#aviso-cookies button{font:inherit;font-weight:500;font-size:0.78rem;letter-spacing:0.08em;' +
-    'text-transform:uppercase;padding:0.7rem 1.3rem;border-radius:2px;cursor:pointer}' +
+    '#aviso-cookies .botoes{display:flex;gap:0.5rem;flex:0 0 auto}' +
+    '#aviso-cookies button{font:inherit;font-weight:500;font-size:0.72rem;letter-spacing:0.08em;' +
+    'text-transform:uppercase;padding:0.55rem 1rem;border-radius:2px;cursor:pointer}' +
     '#aviso-cookies .recusar{background:transparent;color:#F5F2EC;border:1px solid rgba(245,242,236,0.4)}' +
     '#aviso-cookies .aceitar{background:#C9A84C;color:#FDFBF7;border:1px solid #C9A84C}' +
     '#aviso-cookies button:focus-visible{outline:2px solid #C9A84C;outline-offset:3px}' +
-    '@media (max-width:480px){#aviso-cookies .botoes button{flex:1}}';
+    '@media (max-width:600px){#aviso-cookies{font-size:0.76rem;gap:0.6rem;padding-top:0.6rem}' +
+    '#aviso-cookies .botoes{width:100%}#aviso-cookies .botoes button{flex:1;padding:0.5rem}}';
 
   function mostrarAviso() {
     if (document.getElementById('aviso-cookies')) return;
@@ -93,9 +95,8 @@
     caixa.setAttribute('aria-live', 'polite');
     caixa.setAttribute('aria-label', 'Aviso de cookies');
     caixa.innerHTML =
-      '<p>Este site usa cookies do Google Analytics e do Google Ads para contar visitas e medir ' +
-      'o resultado dos anúncios. Eles não são usados para mostrar anúncios personalizados a você. ' +
-      '<a href="/privacidade.html">Política de privacidade</a></p>' +
+      '<p>Usamos cookies do Google para medir visitas e anúncios, sem anúncios personalizados. ' +
+      '<a href="/privacidade.html">Saiba mais</a></p>' +
       '<div class="botoes">' +
       '<button type="button" class="recusar">Recusar</button>' +
       '<button type="button" class="aceitar">Aceitar</button>' +
